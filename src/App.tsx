@@ -335,7 +335,7 @@ const trustInfo = {
 
 const founderData = {
   name: "Shri Narendra Mulchand Punamiya",
-  img: "",
+  img: "/pics/late.png",
   signature: "N. M. Punamiya",
 };
 
