@@ -25,7 +25,7 @@ const useLang = () => useContext(LangContext);
 const translations = {
   en: {
     nav: {
-      about: 'About', founder: 'Founder', journey: 'Journey', projects: 'Initiatives', connect: 'Connect',
+      about: 'About', founder: 'Legacy', journey: 'Journey', projects: 'Initiatives', connect: 'Connect',
       aboutLong: 'About Us', projectsLong: 'Initiatives', journeyLong: 'Our Journey', connectLong: 'Contact',
       langToggle: 'हिंदी',
     },
@@ -35,7 +35,7 @@ const translations = {
       line2: 'where it is needed.',
       desc: 'A vision to serve society through sustainable, impactful initiatives in healthcare, education, environment, and animal welfare.',
       explore: 'Explore Our Work',
-      ourFounder: 'Our Founder',
+      ourFounder: 'Our Legacy',
     },
     marquee: ['Healthcare', 'Education', 'Library', 'Environment', 'Jeevdaya', 'Social Welfare'],
     stats: { years: 'Years of Service', projects: 'Active Projects', lives: 'Lives Impacted', pillars: 'Core Pillars' },
@@ -59,14 +59,14 @@ const translations = {
       role: 'Managing Trustee',
     },
     founder: {
-      ourFounder: 'Our Founder',
-      title: 'Founder & Visionary',
-      heading1: 'The vision of',
-      quote: 'True wealth is measured not by what we accumulate, but by what we give back to the world that shaped us.',
-      bio: 'With a lifelong commitment to service and a deep belief that compassion must be practiced, not preached, Shri Narendra Mulchand Punamiya established the Trust in 2003. His vision continues to guide every initiative — from hospital corridors to mountain trails.',
-      signed: 'Signed',
-      since: 'Since',
-      founder: 'Founder',
+      ourFounder: 'In Loving Memory',
+      title: 'Our Guiding Light',
+      heading1: 'The legacy of',
+      quote: 'He taught us that a life is measured not by what we hold, but by what we give — and that the truest tribute is to keep giving.',
+      bio: 'Shri Mulchand Tarachand Punamiya — the beloved patriarch of the Punamiya family — lived a life of quiet integrity, deep generosity, and unwavering devotion to those around him. Though no longer with us, his values continue to guide every step his sons take. The Trust that carries his name stands as a living tribute to his memory, and every act of service the family performs echoes the example he set.',
+      signed: 'With love',
+      since: 'Legacy since',
+      founder: 'In Memory',
     },
     journey: {
       label: 'Our Journey',
@@ -152,7 +152,7 @@ const translations = {
       subscribe: 'Subscribe',
       brandDesc: 'A legacy built on compassion. Established in 2003 with a vision to serve society across healthcare, education, environment, animal welfare, and community upliftment.',
       exploreTitle: 'Explore',
-      exploreLinks: ['About', 'Founder', 'Journey', 'Initiatives', 'Impact'],
+      exploreLinks: ['About', 'Legacy', 'Journey', 'Initiatives', 'Impact'],
       pillarsTitle: 'Our Pillars',
       visitTitle: 'Visit Us',
       contactHeading: 'Send us a message.',
@@ -172,7 +172,7 @@ const translations = {
   },
   hi: {
     nav: {
-      about: 'हमारे बारे में', founder: 'संस्थापक', journey: 'यात्रा', projects: 'पहलें', connect: 'संपर्क',
+      about: 'हमारे बारे में', founder: 'विरासत', journey: 'यात्रा', projects: 'पहलें', connect: 'संपर्क',
       aboutLong: 'हमारे बारे में', projectsLong: 'पहलें', journeyLong: 'हमारी यात्रा', connectLong: 'संपर्क',
       langToggle: 'EN',
     },
@@ -182,7 +182,7 @@ const translations = {
       line2: 'वहाँ जहाँ ज़रूरत है।',
       desc: 'स्वास्थ्य, शिक्षा, पर्यावरण और पशु कल्याण में सतत, प्रभावी पहलों के माध्यम से समाज की सेवा का एक दृष्टिकोण।',
       explore: 'हमारा काम देखें',
-      ourFounder: 'हमारे संस्थापक',
+      ourFounder: 'हमारी विरासत',
     },
     marquee: ['स्वास्थ्य सेवा', 'शिक्षा', 'पुस्तकालय', 'पर्यावरण', 'जीवदया', 'सामाजिक कल्याण'],
     stats: { years: 'सेवा के वर्ष', projects: 'सक्रिय परियोजनाएं', lives: 'प्रभावित जीवन', pillars: 'मुख्य स्तंभ' },
@@ -206,14 +206,14 @@ const translations = {
       role: 'प्रबंध न्यासी',
     },
     founder: {
-      ourFounder: 'हमारे संस्थापक',
-      title: 'संस्थापक और दूरदर्शी',
-      heading1: 'की दृष्टि',
-      quote: 'सच्चा धन इस बात से नहीं मापा जाता कि हम क्या जमा करते हैं, बल्कि इस बात से कि हम उस दुनिया को क्या वापस देते हैं जिसने हमें आकार दिया।',
-      bio: 'सेवा के प्रति आजीवन प्रतिबद्धता और इस गहन विश्वास के साथ कि करुणा का अभ्यास किया जाना चाहिए, न कि उपदेश दिया जाना चाहिए, श्री नरेंद्र मूलचंद पुनामिया ने 2003 में ट्रस्ट की स्थापना की। उनकी दृष्टि हर पहल का मार्गदर्शन करती रहती है — अस्पताल के गलियारों से लेकर पहाड़ी रास्तों तक।',
-      signed: 'हस्ताक्षरित',
-      since: 'से',
-      founder: 'संस्थापक',
+      ourFounder: 'स्नेहपूर्वक स्मृति में',
+      title: 'हमारे मार्गदर्शक',
+      heading1: 'की विरासत',
+      quote: 'उन्होंने हमें सिखाया कि जीवन इस बात से नहीं मापा जाता कि हम क्या रखते हैं, बल्कि इस बात से कि हम क्या देते हैं — और सच्ची श्रद्धांजलि देते रहना है।',
+      bio: 'श्री मूलचंद ताराचंद पुनामिया — पुनामिया परिवार के प्रिय कुलपति — ने शांत ईमानदारी, गहरी उदारता और अपने आस-पास के लोगों के प्रति अटूट समर्पण का जीवन जिया। वे अब हमारे बीच नहीं हैं, लेकिन उनके मूल्य उनके पुत्रों के हर कदम का मार्गदर्शन करते हैं। उनका नाम धारण करने वाला ट्रस्ट उनकी स्मृति के प्रति एक जीवंत श्रद्धांजलि है, और परिवार द्वारा की जाने वाली हर सेवा उनके द्वारा स्थापित उदाहरण की प्रतिध्वनि है।',
+      signed: 'प्रेम सहित',
+      since: 'विरासत से',
+      founder: 'स्मृति में',
     },
     journey: {
       label: 'हमारी यात्रा',
@@ -299,7 +299,7 @@ const translations = {
       subscribe: 'सदस्यता लें',
       brandDesc: 'करुणा पर आधारित एक विरासत। 2003 में स्थापित, स्वास्थ्य, शिक्षा, पर्यावरण, पशु कल्याण और सामुदायिक उत्थान में समाज की सेवा के दृष्टिकोण के साथ।',
       exploreTitle: 'अन्वेषण करें',
-      exploreLinks: ['हमारे बारे में', 'संस्थापक', 'यात्रा', 'पहलें', 'प्रभाव'],
+      exploreLinks: ['हमारे बारे में', 'विरासत', 'यात्रा', 'पहलें', 'प्रभाव'],
       pillarsTitle: 'हमारे स्तंभ',
       visitTitle: 'हमसे मिलें',
       contactHeading: 'हमें संदेश भेजें।',
@@ -333,10 +333,11 @@ const trustInfo = {
   phone: "+91 22 2801 XXXX",
 };
 
+// The person the Trust is NAMED after — patriarch, no longer with us, father of both trustees.
 const founderData = {
-  name: "Shri Narendra Mulchand Punamiya",
+  name: "Shri Mulchand Tarachand Punamiya",
   img: "/pics/late.png",
-  signature: "N. M. Punamiya",
+  signature: "M. T. Punamiya",
 };
 
 const journeyMilestones = [
@@ -377,7 +378,7 @@ const projectsData = [
       "pics/health1.jpeg",
       "pics/health3.jpeg",
       "pics/health4.jpeg",
-      "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=800"
+      "pics/health5.jpeg"
     ]
   },
   {
@@ -425,9 +426,9 @@ const projectsData = [
       "डिजिटल शिक्षण प्रणालियों और शैक्षिक उपकरणों का समर्थन।"
     ],
     images: [
-      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=800"
+      "pics/library1.jpeg",
+      "pics/library2.jpeg",
+      "pics/library3.jpeg"
     ]
   },
   {
@@ -475,9 +476,9 @@ const projectsData = [
       "ग्रामीण जीवन को बनाए रखने वाले जानवरों की देखभाल की व्यावहारिक अभिव्यक्ति।"
     ],
     images: [
-      "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1527525443983-6e60c75fff50?auto=format&fit=crop&q=80&w=800"
+      "pics/animal1.jpeg",
+      "pics/animal2.jpeg",
+      "pics/animal3.jpeg"
     ]
   },
   {
@@ -502,7 +503,7 @@ const projectsData = [
     images: [
       "pics/family1.jpeg",
       "pics/social1.jpeg",
-      "https://images.unsplash.com/photo-1593113589914-07553f6580f1?auto=format&fit=crop&q=80&w=800"
+      "pics/social2.jpeg"
     ]
   }
 ];
@@ -520,10 +521,22 @@ const localizeProject = (p, isHindi) => isHindi ? {
   details: p.detailsHi || p.details,
 } : p;
 
-// --- GRAIN OVERLAY ---
+// --- HOOK: MOBILE DETECT ---
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.matchMedia('(max-width: 768px)').matches);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+  return isMobile;
+};
+
+// --- GRAIN OVERLAY (disabled on mobile for performance) ---
 const GrainOverlay = () => (
   <div
-    className="pointer-events-none fixed inset-0 z-[150] opacity-[0.05] mix-blend-overlay"
+    className="hidden md:block pointer-events-none fixed inset-0 z-[150] opacity-[0.05] mix-blend-overlay"
     style={{
       backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
       backgroundSize: '180px 180px',
@@ -613,12 +626,12 @@ const MagneticButton = ({ children, className = '', onClick }) => {
   );
 };
 
-// --- ROTATING BADGE ---
+// --- ROTATING BADGE (disabled on mobile) ---
 const RotatingBadge = ({ text = "• COMPASSION • IN • PRACTICE • SINCE • 2003 ", color = "#C28C54" }) => (
   <motion.div
     animate={{ rotate: 360 }}
     transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
-    className="w-28 h-28 md:w-32 md:h-32"
+    className="hidden md:block w-28 h-28 md:w-32 md:h-32"
   >
     <svg viewBox="0 0 100 100" className="w-full h-full">
       <defs>
@@ -828,6 +841,7 @@ const Navbar = ({ currentView, setCurrentView }) => {
 const CinematicHero = () => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
+  const isMobile = useIsMobile();
   const ref = useRef(null);
   const [currentIdx, setCurrentIdx] = useState(0);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
@@ -844,7 +858,7 @@ const CinematicHero = () => {
 
   return (
     <section ref={ref} id="home" className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
-      <motion.div style={{ y: bgY }} className="absolute inset-0">
+      <motion.div style={isMobile ? {} : { y: bgY }} className="absolute inset-0">
         {heroImages.map((src, idx) => (
           <div key={idx} className={`absolute inset-0 transition-opacity duration-[1500ms] ease-in-out ${idx === currentIdx ? 'opacity-100' : 'opacity-0'}`}>
             <div className="w-full h-[130%] overflow-hidden">
@@ -857,10 +871,14 @@ const CinematicHero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-[#1A362D]/85 via-[#1A362D]/45 to-[#1A362D]/95" />
       </motion.div>
 
-      <motion.div className="absolute top-1/4 left-[10%] w-40 h-40 rounded-full bg-[#C28C54]/25 blur-3xl pointer-events-none" animate={{ y: [0, -40, 0], scale: [1, 1.15, 1] }} transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }} />
-      <motion.div className="absolute bottom-1/4 right-[15%] w-56 h-56 rounded-full bg-[#C28C54]/15 blur-3xl pointer-events-none" animate={{ y: [0, 50, 0], scale: [1, 1.2, 1] }} transition={{ duration: 11, repeat: Infinity, ease: "easeInOut", delay: 2 }} />
+      {!isMobile && (
+        <>
+          <motion.div className="absolute top-1/4 left-[10%] w-40 h-40 rounded-full bg-[#C28C54]/25 blur-3xl pointer-events-none" animate={{ y: [0, -40, 0], scale: [1, 1.15, 1] }} transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }} />
+          <motion.div className="absolute bottom-1/4 right-[15%] w-56 h-56 rounded-full bg-[#C28C54]/15 blur-3xl pointer-events-none" animate={{ y: [0, 50, 0], scale: [1, 1.2, 1] }} transition={{ duration: 11, repeat: Infinity, ease: "easeInOut", delay: 2 }} />
+        </>
+      )}
 
-      <motion.div style={{ y: textY, opacity }} className="relative z-20 max-w-5xl mx-auto px-6 text-center pt-20">
+      <motion.div style={isMobile ? {} : { y: textY, opacity }} className="relative z-20 max-w-5xl mx-auto px-6 text-center pt-20">
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.3 }}
           className={`${theme.accentText} uppercase tracking-[0.3em] text-sm md:text-base font-semibold mb-6 flex items-center justify-center gap-4`}>
           <span className="w-8 h-[1px] bg-[#C28C54]"></span>
@@ -1003,6 +1021,7 @@ const AboutSection = () => {
 const TrusteesSection = () => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
+  const isMobile = useIsMobile();
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
 
@@ -1018,33 +1037,37 @@ const TrusteesSection = () => {
       className="relative overflow-hidden py-24 md:py-32 bg-[#EFEADF] border-t border-[#1A362D]/10"
     >
       <motion.div
-        style={{ x: bgX }}
-        className="absolute top-12 left-0 flex items-center pointer-events-none whitespace-nowrap"
+        style={isMobile ? {} : { x: bgX }}
+        className="hidden md:flex absolute top-12 left-0 items-center pointer-events-none whitespace-nowrap"
       >
-        <span className="text-[18vw] md:text-[14vw] font-serif text-[#1A362D]/[0.05] leading-none">TRUSTEES</span>
-        <span className="text-[18vw] md:text-[14vw] font-serif text-[#C28C54]/[0.15] leading-none ml-16">·</span>
-        <span className="text-[18vw] md:text-[14vw] font-serif italic text-[#1A362D]/[0.04] leading-none ml-16">LEADERSHIP</span>
+        <span className="text-[14vw] font-serif text-[#1A362D]/[0.05] leading-none">TRUSTEES</span>
+        <span className="text-[14vw] font-serif text-[#C28C54]/[0.15] leading-none ml-16">·</span>
+        <span className="text-[14vw] font-serif italic text-[#1A362D]/[0.04] leading-none ml-16">LEADERSHIP</span>
       </motion.div>
 
       <motion.div
-        style={{ x: bgX2 }}
-        className="absolute bottom-16 right-0 flex items-center pointer-events-none whitespace-nowrap"
+        style={isMobile ? {} : { x: bgX2 }}
+        className="hidden md:flex absolute bottom-16 right-0 items-center pointer-events-none whitespace-nowrap"
       >
-        <span className="text-[18vw] md:text-[14vw] font-serif italic text-[#1A362D]/[0.04] leading-none">GUIDANCE</span>
-        <span className="text-[18vw] md:text-[14vw] font-serif text-[#C28C54]/[0.15] leading-none ml-16">·</span>
-        <span className="text-[18vw] md:text-[14vw] font-serif text-[#1A362D]/[0.05] leading-none ml-16">STEWARDSHIP</span>
+        <span className="text-[14vw] font-serif italic text-[#1A362D]/[0.04] leading-none">GUIDANCE</span>
+        <span className="text-[14vw] font-serif text-[#C28C54]/[0.15] leading-none ml-16">·</span>
+        <span className="text-[14vw] font-serif text-[#1A362D]/[0.05] leading-none ml-16">STEWARDSHIP</span>
       </motion.div>
 
-      <motion.div
-        className="absolute top-1/3 left-10 w-72 h-72 rounded-full bg-[#C28C54]/15 blur-3xl pointer-events-none"
-        animate={{ y: [0, -30, 0], scale: [1, 1.15, 1] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-[#C28C54]/10 blur-3xl pointer-events-none"
-        animate={{ y: [0, 30, 0], scale: [1, 1.2, 1] }}
-        transition={{ duration: 14, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-      />
+      {!isMobile && (
+        <>
+          <motion.div
+            className="absolute top-1/3 left-10 w-72 h-72 rounded-full bg-[#C28C54]/15 blur-3xl pointer-events-none"
+            animate={{ y: [0, -30, 0], scale: [1, 1.15, 1] }}
+            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-[#C28C54]/10 blur-3xl pointer-events-none"
+            animate={{ y: [0, 30, 0], scale: [1, 1.2, 1] }}
+            transition={{ duration: 14, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+          />
+        </>
+      )}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         <FadeIn>
@@ -1059,7 +1082,7 @@ const TrusteesSection = () => {
           </div>
         </FadeIn>
 
-        <motion.div style={{ y: gridY }} className="grid md:grid-cols-2 gap-16 max-w-4xl mx-auto">
+        <motion.div style={isMobile ? {} : { y: gridY }} className="grid md:grid-cols-2 gap-16 max-w-4xl mx-auto">
           {trusteesData.map((trustee, idx) => (
             <motion.div
               key={idx}
@@ -1070,12 +1093,12 @@ const TrusteesSection = () => {
               className="relative group"
             >
               <motion.div
-                style={{ rotate: ringRotate }}
-                className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 md:w-72 md:h-72 rounded-full border border-dashed border-[#C28C54]/40 pointer-events-none"
+                style={isMobile ? {} : { rotate: ringRotate }}
+                className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full border border-dashed border-[#C28C54]/40 pointer-events-none"
               />
               <motion.div
-                style={{ rotate: ringRotate2 }}
-                className="absolute top-4 left-1/2 -translate-x-1/2 w-64 h-64 md:w-72 md:h-72 rounded-full border border-dotted border-[#C28C54]/20 pointer-events-none"
+                style={isMobile ? {} : { rotate: ringRotate2 }}
+                className="hidden md:block absolute top-4 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full border border-dotted border-[#C28C54]/20 pointer-events-none"
               />
 
               <motion.div
@@ -1107,8 +1130,8 @@ const TrusteesSection = () => {
                 />
               </div>
 
-              <div className="absolute top-0 left-6 w-8 h-8 border-t-2 border-l-2 border-[#C28C54] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-0 right-6 w-8 h-8 border-b-2 border-r-2 border-[#C28C54] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="hidden md:block absolute top-0 left-6 w-8 h-8 border-t-2 border-l-2 border-[#C28C54] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="hidden md:block absolute bottom-0 right-6 w-8 h-8 border-b-2 border-r-2 border-[#C28C54] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}
         </motion.div>
@@ -1117,10 +1140,11 @@ const TrusteesSection = () => {
   );
 };
 
-// --- FOUNDER SPOTLIGHT ---
+// --- FOUNDER / IN MEMORY SPOTLIGHT ---
 const FounderSpotlight = () => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
+  const isMobile = useIsMobile();
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const bgText = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
@@ -1128,26 +1152,26 @@ const FounderSpotlight = () => {
 
   return (
     <section ref={ref} id="founder" className="relative py-24 md:py-32 bg-[#1A362D] overflow-hidden">
-      <motion.div style={{ x: bgText }} className="absolute inset-y-0 -left-1/4 flex items-center pointer-events-none whitespace-nowrap">
-        <span className="text-[22vw] font-serif text-[#C28C54]/[0.06] leading-none">FOUNDER</span>
-        <span className="text-[22vw] font-serif text-[#C28C54]/[0.06] leading-none ml-20">VISION</span>
+      <motion.div style={isMobile ? {} : { x: bgText }} className="hidden md:flex absolute inset-y-0 -left-1/4 items-center pointer-events-none whitespace-nowrap">
+        <span className="text-[22vw] font-serif text-[#C28C54]/[0.06] leading-none">MEMORY</span>
         <span className="text-[22vw] font-serif text-[#C28C54]/[0.06] leading-none ml-20">LEGACY</span>
+        <span className="text-[22vw] font-serif text-[#C28C54]/[0.06] leading-none ml-20">LOVE</span>
       </motion.div>
 
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/40 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/40 to-transparent" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-        <motion.div style={{ y: imgY }} className="lg:col-span-5 relative">
+        <motion.div style={isMobile ? {} : { y: imgY }} className="lg:col-span-5 relative">
           <FadeIn direction="right">
             <div className="relative mx-auto max-w-md">
               <motion.div
-                className="absolute -inset-6 rounded-full border border-[#C28C54]/30"
+                className="hidden md:block absolute -inset-6 rounded-full border border-[#C28C54]/30"
                 animate={{ rotate: 360 }} transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
                 style={{ borderStyle: 'dashed' }}
               />
               <motion.div
-                className="absolute -inset-12 rounded-full border border-[#C28C54]/15"
+                className="hidden md:block absolute -inset-12 rounded-full border border-[#C28C54]/15"
                 animate={{ rotate: -360 }} transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
                 style={{ borderStyle: 'dotted' }}
               />
@@ -1196,11 +1220,9 @@ const FounderSpotlight = () => {
             <div className="flex items-center gap-6">
               <div>
                 <p className="text-[10px] tracking-widest uppercase text-[#C28C54] font-bold mb-1">{t.founder.signed}</p>
-                <motion.p
-                  initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true }}
-                  className="font-serif italic text-3xl md:text-4xl text-[#C28C54]">
+                <p className="font-serif italic text-3xl md:text-4xl text-[#C28C54]">
                   {founderData.signature}
-                </motion.p>
+                </p>
               </div>
               <div className="hidden sm:block w-[1px] h-12 bg-white/20" />
               <div className="hidden sm:block">
@@ -1314,12 +1336,12 @@ const HomeMasonryGallery = ({ onImageClick }) => {
   return (
     <section className={`py-24 ${theme.bgAlt} relative overflow-hidden`}>
       <motion.div
-        className="absolute top-20 left-0 w-72 h-72 rounded-full bg-[#C28C54]/10 blur-3xl pointer-events-none"
+        className="hidden md:block absolute top-20 left-0 w-72 h-72 rounded-full bg-[#C28C54]/10 blur-3xl pointer-events-none"
         animate={{ y: [0, 40, 0], x: [0, 20, 0] }}
         transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div
-        className="absolute bottom-20 right-0 w-96 h-96 rounded-full bg-[#1A362D]/[0.05] blur-3xl pointer-events-none"
+        className="hidden md:block absolute bottom-20 right-0 w-96 h-96 rounded-full bg-[#1A362D]/[0.05] blur-3xl pointer-events-none"
         animate={{ y: [0, -30, 0], x: [0, -20, 0] }}
         transition={{ duration: 16, repeat: Infinity, ease: "easeInOut", delay: 2 }}
       />
@@ -1367,15 +1389,6 @@ const HomeMasonryGallery = ({ onImageClick }) => {
 
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1A362D]/95 via-[#1A362D]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
 
-                <div className="absolute inset-0 z-20 pointer-events-none opacity-0 group-hover:opacity-100">
-                  <motion.div
-                    initial={{ x: "-120%" }}
-                    whileHover={{ x: "120%" }}
-                    transition={{ duration: 1, ease: "easeInOut" }}
-                    className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-20deg]"
-                  />
-                </div>
-
                 <div className="absolute top-3 right-3 z-30 opacity-0 group-hover:opacity-100 transform -translate-y-2 group-hover:translate-y-0 transition-all duration-500">
                   <span className="bg-[#C28C54] text-[#1A362D] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
                     {item.tag}
@@ -1391,9 +1404,6 @@ const HomeMasonryGallery = ({ onImageClick }) => {
                     {t.gallery.view}
                   </div>
                 </div>
-
-                <div className="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-[#C28C54] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30" />
-                <div className="absolute bottom-3 right-3 w-5 h-5 border-b-2 border-r-2 border-[#C28C54] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-30" />
 
                 <div className="absolute top-3 left-3 z-30 group-hover:opacity-0 transition-opacity duration-300">
                   <span className="bg-[#1A362D]/70 backdrop-blur-sm text-white/90 text-[10px] font-bold px-2 py-1 rounded">
@@ -1415,10 +1425,11 @@ const HorizontalProjects = ({ onImageClick, setCurrentView }) => {
   const t = isHindi ? translations.hi : translations.en;
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start start", "end end"] });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-78%"]);
+  // FIX: increased range so all 6 cards (including #5 and #6) are reachable
+  const x = useTransform(scrollYProgress, [0, 1], ["0vw", "-220vw"]);
 
   return (
-    <section ref={containerRef} id="projects" className="relative h-[400vh] bg-[#1A362D] hidden md:block">
+    <section ref={containerRef} id="projects" className="relative h-[500vh] bg-[#1A362D] hidden md:block">
       <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-10 w-full">
           <motion.span initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
@@ -1508,13 +1519,14 @@ const MobileProjectsList = ({ onImageClick, setCurrentView }) => {
 const ParallaxDifferenceSection = () => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
+  const isMobile = useIsMobile();
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], ["-15%", "15%"]);
 
   return (
     <section ref={ref} id="difference" className="relative overflow-hidden py-24 md:py-32">
-      <motion.div style={{ y }} className="absolute inset-0 scale-110">
+      <motion.div style={isMobile ? {} : { y }} className="absolute inset-0 scale-110">
         <img src="pics/clean1.jpeg" className="w-full h-full object-cover" alt="" />
       </motion.div>
       <div className="absolute inset-0 bg-[#1A362D]/85" />
@@ -1570,7 +1582,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className={`py-24 md:py-32 ${theme.bgBase} relative overflow-hidden`}>
-      <div className="absolute top-12 left-1/2 -translate-x-1/2 text-[18rem] md:text-[24rem] font-serif text-[#C28C54]/5 leading-none pointer-events-none select-none">
+      <div className="hidden md:block absolute top-12 left-1/2 -translate-x-1/2 text-[24rem] font-serif text-[#C28C54]/5 leading-none pointer-events-none select-none">
         &quot;
       </div>
 
@@ -1622,7 +1634,8 @@ const ProjectDetailView = ({ project: rawProject, setCurrentView, onImageClick }
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
   const project = localizeProject(rawProject, isHindi);
-  const masonryImages = Array.from({ length: 16 }).map((_, i) => `${project.images[i % project.images.length]}&sig=${i}`);
+  // FIX: just use the actual project images — no more broken `&sig=` suffix
+  const masonryImages = project.images;
 
   return (
     <div className={`min-h-screen ${theme.bgBase} pb-16 animate-fade-in`}>
@@ -1715,7 +1728,6 @@ const FullFooter = () => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
   const year = new Date().getFullYear();
-  const [subOpen, setSubOpen] = useState(false);
 
   return (
     <footer id="connect" className="relative bg-[#1A362D] text-[#F7F5F0] overflow-hidden">
@@ -1728,9 +1740,9 @@ const FullFooter = () => {
         />
       </div>
 
-      <motion.div className="absolute top-40 right-0 w-96 h-96 rounded-full bg-[#C28C54]/10 blur-3xl pointer-events-none"
+      <motion.div className="hidden md:block absolute top-40 right-0 w-96 h-96 rounded-full bg-[#C28C54]/10 blur-3xl pointer-events-none"
         animate={{ y: [0, 40, 0], scale: [1, 1.2, 1] }} transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }} />
-      <motion.div className="absolute bottom-20 left-0 w-72 h-72 rounded-full bg-[#C28C54]/8 blur-3xl pointer-events-none"
+      <motion.div className="hidden md:block absolute bottom-20 left-0 w-72 h-72 rounded-full bg-[#C28C54]/8 blur-3xl pointer-events-none"
         animate={{ y: [0, -30, 0], scale: [1, 1.15, 1] }} transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }} />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-16">
@@ -1979,6 +1991,9 @@ export default function App() {
             100% { transform: scale(1.2) translate(-1%, -1%); }
           }
           .hero-kenburns { animation: kenburns 14s ease-out infinite alternate; will-change: transform; }
+          @media (max-width: 768px) {
+            .hero-kenburns { animation-duration: 22s; }
+          }
           ::-webkit-scrollbar { width: 10px; }
           ::-webkit-scrollbar-track { background: #F7F5F0; }
           ::-webkit-scrollbar-thumb { background: #C28C54; border-radius: 5px; }
