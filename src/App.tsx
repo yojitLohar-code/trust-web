@@ -15,10 +15,7 @@ const theme = {
 };
 
 // --- LANGUAGE CONTEXT ---
-const LangContext = createContext({
-  isHindi: false,
-  setIsHindi: () => {},
-});
+const LangContext = createContext({ isHindi: false, setIsHindi: () => {} });
 const useLang = () => useContext(LangContext);
 
 // --- TRANSLATIONS ---
@@ -88,27 +85,6 @@ const translations = {
       heading2: 'Motion',
       desc: 'A glimpse into the everyday work of the Trust — from hospital corridors to mountain trails.',
       view: 'View',
-      captions: [
-        { text: "Dialysis Centre", tag: "Healthcare" },
-        { text: "Hospital Wing", tag: "Healthcare" },
-        { text: "Hospital Ward", tag: "Healthcare" },
-        { text: "Medical Camp", tag: "Healthcare" },
-        { text: "School Kits", tag: "Education" },
-        { text: "Classroom Support", tag: "Education" },
-        { text: "Extracurricular Activities", tag: "Education" },
-        { text: "Community Library", tag: "Library" },
-        { text: "Reading Program", tag: "Library" },
-        { text: "Digital Learning", tag: "Library" },
-        { text: "Aravali Clean-Up", tag: "Environment" },
-        { text: "Tree Plantation", tag: "Environment" },
-        { text: "Forest Support", tag: "Environment" },
-        { text: "Pashu Hospital", tag: "Jeevdaya" },
-        { text: "Chara Vitaran", tag: "Jeevdaya" },
-        { text: "Animal Care Camp", tag: "Jeevdaya" },
-        { text: "Family Support", tag: "Social" },
-        { text: "Relief Distribution", tag: "Social" },
-        { text: "Community Outreach", tag: "Social" },
-      ],
     },
     projectsSection: {
       label: 'Six Ways We Stand Beside A Community',
@@ -210,7 +186,7 @@ const translations = {
       title: 'हमारे मार्गदर्शक',
       heading1: 'की विरासत',
       quote: 'उन्होंने हमें सिखाया कि जीवन इस बात से नहीं मापा जाता कि हम क्या रखते हैं, बल्कि इस बात से कि हम क्या देते हैं — और सच्ची श्रद्धांजलि देते रहना है।',
-      bio: 'श्री मूलचंद ताराचंद पुनामिया — पुनामिया परिवार के प्रिय कुलपति — ने शांत ईमानदारी, गहरी उदारता और अपने आस-पास के लोगों के प्रति अटूट समर्पण का जीवन जिया। वे अब हमारे बीच नहीं हैं, लेकिन उनके मूल्य उनके पुत्रों के हर कदम का मार्गदर्शन करते हैं। उनका नाम धारण करने वाला ट्रस्ट उनकी स्मृति के प्रति एक जीवंत श्रद्धांजलि है, और परिवार द्वारा की जाने वाली हर सेवा उनके द्वारा स्थापित उदाहरण की प्रतिध्वनि है।',
+      bio: 'श्री मूलचंद ताराचंद पुनामिया — पुनामिया परिवार के प्रिय कुलपति — ने शांत ईमानदारी, गहरी उदारता और अपने आस-पास के लोगों के प्रति अटूट समर्पण का जीवन जिया। वे अब हमारे बीच नहीं हैं, लेकिन उनके मूल्य उनके पुत्रों के हर कदम का मार्गदर्शन करते हैं। उनका नाम धारण करने वाला ट्रस्ट उनकी स्मृति के प्रति एक जीवंत श्रद्धांजलि है।',
       signed: 'प्रेम सहित',
       since: 'विरासत से',
       founder: 'स्मृति में',
@@ -235,27 +211,6 @@ const translations = {
       heading2: 'जीवन',
       desc: 'ट्रस्ट के रोज़मर्रा के काम की एक झलक — अस्पताल के गलियारों से लेकर पहाड़ी रास्तों तक।',
       view: 'देखें',
-      captions: [
-        { text: "डायलिसिस केंद्र", tag: "स्वास्थ्य" },
-        { text: "अस्पताल विंग", tag: "स्वास्थ्य" },
-        { text: "अस्पताल वार्ड", tag: "स्वास्थ्य" },
-        { text: "चिकित्सा शिविर", tag: "स्वास्थ्य" },
-        { text: "स्कूल किट", tag: "शिक्षा" },
-        { text: "कक्षा सहायता", tag: "शिक्षा" },
-        { text: "पाठ्येतर गतिविधियाँ", tag: "शिक्षा" },
-        { text: "समुदाय पुस्तकालय", tag: "पुस्तकालय" },
-        { text: "पठन कार्यक्रम", tag: "पुस्तकालय" },
-        { text: "डिजिटल शिक्षा", tag: "पुस्तकालय" },
-        { text: "अरावली सफाई", tag: "पर्यावरण" },
-        { text: "वृक्षारोपण", tag: "पर्यावरण" },
-        { text: "वन सहायता", tag: "पर्यावरण" },
-        { text: "पशु अस्पताल", tag: "जीवदया" },
-        { text: "चारा वितरण", tag: "जीवदया" },
-        { text: "पशु देखभाल शिविर", tag: "जीवदया" },
-        { text: "परिवार सहायता", tag: "सामाजिक" },
-        { text: "राहत वितरण", tag: "सामाजिक" },
-        { text: "समुदाय आउटरीच", tag: "सामाजिक" },
-      ],
     },
     projectsSection: {
       label: 'समुदाय के साथ खड़े होने के छह तरीके',
@@ -266,7 +221,7 @@ const translations = {
     difference: {
       heading1: 'हमारा दृष्टिकोण क्या',
       heading2: 'अलग बनाता है?',
-      desc: 'हम केवल दान नहीं करते; हम पारिस्थितिक तंत्र बनाते और बनाए रखते हैं। चक्र में हर जीवित प्राणी शामिल है। अस्पताल के गलियारे से लेकर स्कूल के आँगन तक, पुस्तकालय की शेल्फ से लेकर अरावली की पहाड़ियों तक, ट्रस्ट उन जगहों का समर्थन करता है जो समुदाय को एक साथ रखती हैं।',
+      desc: 'हम केवल दान नहीं करते; हम पारिस्थितिक तंत्र बनाते और बनाए रखते हैं। चक्र में हर जीवित प्राणी शामिल है।',
       points: [
         'स्वास्थ्य, शिक्षा और प्रकृति को जोड़ने वाला समग्र दृष्टिकोण।',
         'निरंतर ज़मीनी भागीदारी, न कि केवल समय-समय पर।',
@@ -333,7 +288,6 @@ const trustInfo = {
   phone: "+91 22 2801 XXXX",
 };
 
-// The person the Trust is NAMED after — patriarch, no longer with us, father of both trustees.
 const founderData = {
   name: "Shri Mulchand Tarachand Punamiya",
   img: "/pics/late.png",
@@ -354,6 +308,11 @@ const trusteesData = [
   { name: "Shri Punit Punamiya", img: "pics/trustee2.jpeg" },
 ];
 
+// ====================================================================
+// PROJECTS DATA
+// Each project has its own images[] and matching captions[]/captionsHi[].
+// Adding/removing images here ONLY affects that project's gallery page.
+// ====================================================================
 const projectsData = [
   {
     id: 'healthcare',
@@ -377,9 +336,29 @@ const projectsData = [
     images: [
       "pics/health1.jpeg",
       "pics/health3.jpeg",
-      "pics/health4.jpeg",
-      "pics/health5.jpeg"
-    ]
+      "pics/health4.png",
+      
+      "pics/health4.png",
+      "pics/health7.png",
+      "pics/health9.png",
+      "pics/health10.jpeg",
+      "pics/health11.jpeg",
+      "pics/health12.jpeg",
+      "pics/health15.jpeg",
+
+    ],
+    captions: [
+      { text: "Medical Camp", tag: "Healthcare" },
+      { text: "Hospital Wing", tag: "Healthcare" },
+      { text: "Hospital Ward", tag: "Healthcare" },
+      { text: "Dialysis Centre", tag: "Healthcare" },
+    ],
+    captionsHi: [
+      { text: "चिकित्सा शिविर", tag: "स्वास्थ्य" },
+      { text: "अस्पताल विंग", tag: "स्वास्थ्य" },
+      { text: "अस्पताल वार्ड", tag: "स्वास्थ्य" },
+      { text: "डायलिसिस केंद्र", tag: "स्वास्थ्य" },
+    ],
   },
   {
     id: 'education',
@@ -401,10 +380,42 @@ const projectsData = [
       "गंभीर वित्तीय जरूरत वाले बच्चों की शिक्षा फीस का भुगतान।"
     ],
     images: [
-      "pics/school2.jpeg",
+      "pics/edu2.jpeg",
+      "pics/edu1.jpeg",
+      
       "pics/class1.jpeg",
-      "pics/sports2.jpeg"
-    ]
+      "pics/sports2.jpeg",
+      "pics/edu3.jpeg",
+      "pics/edu4.jpeg",
+      "pics/edu5.jpeg",
+      "pics/edu6.jpeg",
+      "pics/edu7.jpeg",
+      "pics/edu8.jpeg",
+      
+      "pics/edu11.jpeg",
+      "pics/edu12.jpeg",
+      "pics/edu13.jpeg",
+      "pics/edu14.jpeg",
+      "pics/edu14.jpeg",
+      "pics/edu15.jpeg",
+      "pics/edu16.jpeg",
+      "pics/edu17.jpeg",
+      "pics/edu18.jpeg",
+      
+      
+    ],
+    captions: [
+      { text: "School Kits", tag: "Education" },
+      { text: "Classroom Support", tag: "Education" },
+      { text: "Extracurricular Activities", tag: "Education" },
+      { text: "Media Coverage", tag: "Education" },
+    ],
+    captionsHi: [
+      { text: "स्कूल किट", tag: "शिक्षा" },
+      { text: "कक्षा सहायता", tag: "शिक्षा" },
+      { text: "पाठ्येतर गतिविधियाँ", tag: "शिक्षा" },
+      { text: "मीडिया कवरेज", tag: "शिक्षा" },
+    ],
   },
   {
     id: 'library',
@@ -429,7 +440,17 @@ const projectsData = [
       "pics/library1.jpeg",
       "pics/library2.jpeg",
       "pics/library3.jpeg"
-    ]
+    ],
+    captions: [
+      { text: "Community Library", tag: "Library" },
+      { text: "Reading Program", tag: "Library" },
+      { text: "Digital Learning", tag: "Library" },
+    ],
+    captionsHi: [
+      { text: "समुदाय पुस्तकालय", tag: "पुस्तकालय" },
+      { text: "पठन कार्यक्रम", tag: "पुस्तकालय" },
+      { text: "डिजिटल शिक्षा", tag: "पुस्तकालय" },
+    ],
   },
   {
     id: 'environment',
@@ -453,8 +474,21 @@ const projectsData = [
     images: [
       "pics/enn2.jpeg",
       "pics/enn1.jpeg",
-      "pics/enn4.jpeg"
-    ]
+      "pics/enn4.jpeg",
+      "pics/en1.jpeg",
+      "pics/en2.jpeg",
+
+    ],
+    captions: [
+      { text: "Aravali Clean-Up", tag: "Environment" },
+      { text: "Tree Plantation", tag: "Environment" },
+      { text: "Forest Support", tag: "Environment" },
+    ],
+    captionsHi: [
+      { text: "अरावली सफाई", tag: "पर्यावरण" },
+      { text: "वृक्षारोपण", tag: "पर्यावरण" },
+      { text: "वन सहायता", tag: "पर्यावरण" },
+    ],
   },
   {
     id: 'animal',
@@ -479,7 +513,17 @@ const projectsData = [
       "pics/animal1.jpeg",
       "pics/animal2.jpeg",
       "pics/animal3.jpeg"
-    ]
+    ],
+    captions: [
+      { text: "Pashu Hospital", tag: "Jeevdaya" },
+      { text: "Chara Vitaran", tag: "Jeevdaya" },
+      { text: "Animal Care Camp", tag: "Jeevdaya" },
+    ],
+    captionsHi: [
+      { text: "पशु अस्पताल", tag: "जीवदया" },
+      { text: "चारा वितरण", tag: "जीवदया" },
+      { text: "पशु देखभाल शिविर", tag: "जीवदया" },
+    ],
   },
   {
     id: 'social',
@@ -504,9 +548,48 @@ const projectsData = [
       "pics/family1.jpeg",
       "pics/social1.jpeg",
       "pics/social2.jpeg"
-    ]
+    ],
+    captions: [
+      { text: "Family Support", tag: "Social" },
+      { text: "Relief Distribution", tag: "Social" },
+      { text: "Community Outreach", tag: "Social" },
+    ],
+    captionsHi: [
+      { text: "परिवार सहायता", tag: "सामाजिक" },
+      { text: "राहत वितरण", tag: "सामाजिक" },
+      { text: "समुदाय आउटरीच", tag: "सामाजिक" },
+    ],
   }
 ];
+
+// ====================================================================
+// HOME GALLERY (Life in Motion) — SEPARATE FROM PROJECT GALLERIES
+// This is the ONLY place that controls what shows up in the home page
+// "Life in Motion" section. Adding images to a project above will NOT
+// affect this list. Edit this array whenever you want to change the
+// home page gallery.
+// ====================================================================
+const homeGalleryImages = [
+  { src: "pics/health1.jpeg",    en: { text: "Medical Camp",             tag: "Healthcare" },  hi: { text: "चिकित्सा शिविर",         tag: "स्वास्थ्य" } },
+  { src: "pics/health3.jpeg",    en: { text: "Hospital Wing",            tag: "Healthcare" },  hi: { text: "अस्पताल विंग",            tag: "स्वास्थ्य" } },
+  { src: "pics/school2.jpeg",    en: { text: "School Kits",              tag: "Education" },   hi: { text: "स्कूल किट",              tag: "शिक्षा" } },
+  { src: "pics/class1.jpeg",     en: { text: "Classroom Support",        tag: "Education" },   hi: { text: "कक्षा सहायता",           tag: "शिक्षा" } },
+  { src: "pics/sports2.jpeg",    en: { text: "Extracurricular Activities", tag: "Education" }, hi: { text: "पाठ्येतर गतिविधियाँ",     tag: "शिक्षा" } },
+  { src: "pics/library1.jpeg",   en: { text: "Community Library",        tag: "Library" },     hi: { text: "समुदाय पुस्तकालय",        tag: "पुस्तकालय" } },
+  { src: "pics/library2.jpeg",   en: { text: "Reading Program",          tag: "Library" },     hi: { text: "पठन कार्यक्रम",          tag: "पुस्तकालय" } },
+  { src: "pics/enn1.jpeg",       en: { text: "Tree Plantation",          tag: "Environment" }, hi: { text: "वृक्षारोपण",              tag: "पर्यावरण" } },
+  { src: "pics/enn2.jpeg",       en: { text: "Aravali Clean-Up",         tag: "Environment" }, hi: { text: "अरावली सफाई",            tag: "पर्यावरण" } },
+  { src: "pics/animal1.jpeg",    en: { text: "Pashu Hospital",           tag: "Jeevdaya" },    hi: { text: "पशु अस्पताल",            tag: "जीवदया" } },
+  { src: "pics/animal2.jpeg",    en: { text: "Chara Vitaran",            tag: "Jeevdaya" },    hi: { text: "चारा वितरण",             tag: "जीवदया" } },
+  { src: "pics/family1.jpeg",    en: { text: "Family Support",           tag: "Social" },      hi: { text: "परिवार सहायता",          tag: "सामाजिक" } },
+  // src: "pics/social1.jpeg",    en: { text: "Relief Distribution",      tag: "Social" },      hi: { text: "राहत वितरण",             tag: "सामाजिक" } },
+].map((entry) => ({
+  src: entry.src,
+  caption: entry.en.text,
+  tag: entry.en.tag,
+  captionHi: entry.hi.text,
+  tagHi: entry.hi.tag,
+}));
 
 const heroImages = [
   "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2940&auto=format&fit=crop",
@@ -533,7 +616,7 @@ const useIsMobile = () => {
   return isMobile;
 };
 
-// --- GRAIN OVERLAY (disabled on mobile for performance) ---
+// --- GRAIN OVERLAY (disabled on mobile) ---
 const GrainOverlay = () => (
   <div
     className="hidden md:block pointer-events-none fixed inset-0 z-[150] opacity-[0.05] mix-blend-overlay"
@@ -1306,21 +1389,20 @@ const JourneyTimeline = () => {
   );
 };
 
-// --- MASONRY GALLERY ---
+// --- MASONRY GALLERY (Life in Motion) ---
+// FIX: Now uses `homeGalleryImages` (defined near the top of the file) —
+// a completely separate list from the project images. Adding an image to
+// any project will NOT make it appear here. To change the home gallery,
+// edit `homeGalleryImages` only.
 const HomeMasonryGallery = ({ onImageClick }) => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
 
-  const rawImages = [
-    ...projectsData[0].images, ...projectsData[1].images,
-    ...projectsData[2].images, ...projectsData[3].images,
-    ...projectsData[4].images, ...projectsData[5].images,
-  ];
-
-  const galleryImages = rawImages.map((src, idx) => ({
-    src,
-    caption: t.gallery.captions[idx % t.gallery.captions.length].text,
-    tag: t.gallery.captions[idx % t.gallery.captions.length].tag,
+  // Build final list with language-aware captions
+  const galleryItems = homeGalleryImages.map((entry, idx) => ({
+    src: entry.src,
+    caption: isHindi ? entry.captionHi : entry.caption,
+    tag: isHindi ? entry.tagHi : entry.tag,
     idx,
   }));
 
@@ -1364,56 +1446,62 @@ const HomeMasonryGallery = ({ onImageClick }) => {
           </p>
         </motion.div>
 
-        <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-          {galleryImages.map((item, idx) => {
-            const anim = enterAnimations[idx % enterAnimations.length];
-            return (
-              <motion.div
-                key={idx}
-                initial={anim.initial}
-                whileInView={{ opacity: 1, x: 0, y: 0, rotate: 0, scale: 1 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.7, delay: (idx % 4) * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                whileHover={{ scale: 1.04, zIndex: 20, rotate: 1 }}
-                className="break-inside-avoid rounded-xl overflow-hidden shadow-md hover:shadow-2xl cursor-zoom-in relative group"
-                onClick={() => onImageClick(item.src)}
-              >
-                <div className="overflow-hidden">
-                  <img
-                    src={item.src}
-                    loading="lazy"
-                    alt={item.caption}
-                    className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-[900ms] ease-out"
-                  />
-                </div>
-
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1A362D]/95 via-[#1A362D]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-
-                <div className="absolute top-3 right-3 z-30 opacity-0 group-hover:opacity-100 transform -translate-y-2 group-hover:translate-y-0 transition-all duration-500">
-                  <span className="bg-[#C28C54] text-[#1A362D] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
-                    {item.tag}
-                  </span>
-                </div>
-
-                <div className="absolute bottom-0 left-0 right-0 p-4 z-30 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <p className="text-white font-serif text-lg leading-tight">{item.caption}</p>
-                  <div className="flex items-center gap-2 mt-2 text-[#C28C54] text-[10px] font-bold uppercase tracking-widest">
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                    </svg>
-                    {t.gallery.view}
+        {galleryItems.length === 0 ? (
+          <div className="text-center py-20 text-[#1A362D]/40">
+            <p className="text-lg font-serif italic">Add images to <code className="font-mono text-sm bg-[#1A362D]/5 px-2 py-1 rounded">homeGalleryImages</code> to populate this section.</p>
+          </div>
+        ) : (
+          <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+            {galleryItems.map((item, idx) => {
+              const anim = enterAnimations[idx % enterAnimations.length];
+              return (
+                <motion.div
+                  key={`${item.src}-${idx}`}
+                  initial={anim.initial}
+                  whileInView={{ opacity: 1, x: 0, y: 0, rotate: 0, scale: 1 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.7, delay: (idx % 4) * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                  whileHover={{ scale: 1.04, zIndex: 20, rotate: 1 }}
+                  className="break-inside-avoid rounded-xl overflow-hidden shadow-md hover:shadow-2xl cursor-zoom-in relative group"
+                  onClick={() => onImageClick(item.src)}
+                >
+                  <div className="overflow-hidden">
+                    <img
+                      src={item.src}
+                      loading="lazy"
+                      alt={item.caption}
+                      className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-[900ms] ease-out"
+                    />
                   </div>
-                </div>
 
-                <div className="absolute top-3 left-3 z-30 group-hover:opacity-0 transition-opacity duration-300">
-                  <span className="bg-[#1A362D]/70 backdrop-blur-sm text-white/90 text-[10px] font-bold px-2 py-1 rounded">
-                    {String(idx + 1).padStart(2, '0')}
-                  </span>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A362D]/95 via-[#1A362D]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+
+                  <div className="absolute top-3 right-3 z-30 opacity-0 group-hover:opacity-100 transform -translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                    <span className="bg-[#C28C54] text-[#1A362D] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
+                      {item.tag}
+                    </span>
+                  </div>
+
+                  <div className="absolute bottom-0 left-0 right-0 p-4 z-30 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <p className="text-white font-serif text-lg leading-tight">{item.caption}</p>
+                    <div className="flex items-center gap-2 mt-2 text-[#C28C54] text-[10px] font-bold uppercase tracking-widest">
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                      {t.gallery.view}
+                    </div>
+                  </div>
+
+                  <div className="absolute top-3 left-3 z-30 group-hover:opacity-0 transition-opacity duration-300">
+                    <span className="bg-[#1A362D]/70 backdrop-blur-sm text-white/90 text-[10px] font-bold px-2 py-1 rounded">
+                      {String(idx + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </section>
   );
@@ -1425,7 +1513,6 @@ const HorizontalProjects = ({ onImageClick, setCurrentView }) => {
   const t = isHindi ? translations.hi : translations.en;
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start start", "end end"] });
-  // FIX: increased range so all 6 cards (including #5 and #6) are reachable
   const x = useTransform(scrollYProgress, [0, 1], ["0vw", "-220vw"]);
 
   return (
@@ -1634,7 +1721,6 @@ const ProjectDetailView = ({ project: rawProject, setCurrentView, onImageClick }
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
   const project = localizeProject(rawProject, isHindi);
-  // FIX: just use the actual project images — no more broken `&sig=` suffix
   const masonryImages = project.images;
 
   return (
