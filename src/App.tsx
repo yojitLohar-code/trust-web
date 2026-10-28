@@ -456,7 +456,7 @@ const projectsData = [
       "बड़े पैमाने पर वृक्षारोपण अभियान आयोजित करना।",
       "स्वच्छता पहलों और स्वच्छ भारत गतिविधियों का समर्थन।"
     ],
-    images: ["pics/enn2.jpeg","pics/enn1.jpeg","pics/enn4.jpeg","pics/en1.jpeg","pics/en2.jpeg"],
+    images: ["pics/enn2.jpeg","pics/enn1.jpeg","pics/enn4.jpeg","pics/en1.jpeg","pics/en2.jpeg","pics/en11.jpeg","pics/en12.jpeg","pics/en13.jpeg","pics/en14.jpeg","pics/en15.jpeg","pics/en16.jpeg","pics/en17.jpeg","pics/en18.jpeg","pics/en19.jpeg","pics/en20.jpeg","pics/en21.jpeg","pics/en22.jpeg","pics/en23.jpeg","pics/en24.jpeg","pics/en25.jpeg","pics/en26.jpeg","pics/en27.jpeg","pics/en28.jpeg",],
     captions: [
       { text: "Aravali Clean-Up", tag: "Environment" },
       { text: "Tree Plantation", tag: "Environment" },
