@@ -558,8 +558,14 @@ const homeGalleryImages = [
 }));
 
 const heroImages = [
-  "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2940&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2813&auto=format&fit=crop"
+  "pics/hom1.jpeg",
+  "pics/hom2.jpeg",
+  "pics/hom3.jpeg",
+  "pics/hom4.jpeg",
+  "pics/hom8.jpeg",
+  "pics/hom11.jpeg"
+
+
 ];
 
 const localizeProject = (p, isHindi) => isHindi ? {
