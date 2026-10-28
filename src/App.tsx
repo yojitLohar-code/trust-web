@@ -56,14 +56,26 @@ const translations = {
       role: 'Managing Trustee',
     },
     founder: {
-      ourFounder: 'In Loving Memory',
-      title: 'Our Guiding Light',
-      heading1: 'The legacy of',
-      quote: 'He taught us that a life is measured not by what we hold, but by what we give — and that the truest tribute is to keep giving.',
-      bio: 'Shri Mulchand Tarachand Punamiya — the beloved patriarch of the Punamiya family — lived a life of quiet integrity, deep generosity, and unwavering devotion to those around him. Though no longer with us, his values continue to guide every step his sons take. The Trust that carries his name stands as a living tribute to his memory, and every act of service the family performs echoes the example he set.',
-      signed: 'With love',
-      since: 'Legacy since',
-      founder: 'In Memory',
+      ourFounder: 'Our Legacy',
+      eyebrow: 'The Founder',
+      title: 'The vision of Narendra Punamiya',
+      subtitle: 'A promise made in memory of a father — carried forward by a family, sustained by a community.',
+      founderLabel: 'Founder & Visionary',
+      founderName: 'Shri Narendra Mulchand Punamiya',
+      founderDesc: 'In 2003, Shri Narendra Punamiya transformed the loss of his father into a living mission — establishing the Trust in loving memory of Shri Mulchand Tarachand Punamiya, and dedicating his life to compassionate service across health, education, environment, and animal welfare.',
+      quote: 'In remembering our father, we found our purpose. The Trust is not just a tribute to his life, but a promise to carry his values forward.',
+      signature: 'Founder',
+      established: 'Established',
+      lineageTitle: 'The Family · Three Generations',
+      patriarchLabel: 'In Loving Memory Of',
+      patriarchName: 'Shri Mulchand Tarachand Punamiya',
+      patriarchDesc: 'The father whose life and values inspired it all — the guiding light behind every initiative of the Trust.',
+      foundersLabel: 'Founded By',
+      foundersName: 'Shri Narendra Mulchand Punamiya',
+      foundersDesc: 'The son who turned remembrance into action, establishing the Trust in 2003 to honor his father\'s legacy.',
+      successorsLabel: 'Carried Forward By',
+      successorsName: 'Neemit & Punit Punamiya',
+      successorsDesc: 'Sons of Shri Narendra Punamiya. The present generation, expanding the vision and deepening the family\'s commitment to compassion.',
     },
     journey: {
       label: 'Our Journey',
@@ -182,14 +194,26 @@ const translations = {
       role: 'प्रबंध न्यासी',
     },
     founder: {
-      ourFounder: 'स्नेहपूर्वक स्मृति में',
-      title: 'हमारे मार्गदर्शक',
-      heading1: 'की विरासत',
-      quote: 'उन्होंने हमें सिखाया कि जीवन इस बात से नहीं मापा जाता कि हम क्या रखते हैं, बल्कि इस बात से कि हम क्या देते हैं — और सच्ची श्रद्धांजलि देते रहना है।',
-      bio: 'श्री मूलचंद ताराचंद पुनामिया — पुनामिया परिवार के प्रिय कुलपति — ने शांत ईमानदारी, गहरी उदारता और अपने आस-पास के लोगों के प्रति अटूट समर्पण का जीवन जिया। वे अब हमारे बीच नहीं हैं, लेकिन उनके मूल्य उनके पुत्रों के हर कदम का मार्गदर्शन करते हैं। उनका नाम धारण करने वाला ट्रस्ट उनकी स्मृति के प्रति एक जीवंत श्रद्धांजलि है।',
-      signed: 'प्रेम सहित',
-      since: 'विरासत से',
-      founder: 'स्मृति में',
+      ourFounder: 'हमारी विरासत',
+      eyebrow: 'संस्थापक',
+      title: 'नरेंद्र पुनामिया की दृष्टि',
+      subtitle: 'पिता की स्मृति में किया गया एक वादा — परिवार द्वारा आगे बढ़ाया गया, समुदाय द्वारा सहारा दिया गया।',
+      founderLabel: 'संस्थापक और दूरदर्शी',
+      founderName: 'श्री नरेंद्र मूलचंद पुनामिया',
+      founderDesc: '2003 में, श्री नरेंद्र पुनामिया ने अपने पिता के निधन को एक जीवंत मिशन में बदल दिया — श्री मूलचंद ताराचंद पुनामिया की स्मृति में ट्रस्ट की स्थापना की और स्वास्थ्य, शिक्षा, पर्यावरण और पशु कल्याण में करुणामय सेवा के लिए अपना जीवन समर्पित किया।',
+      quote: 'अपने पिता को याद करते हुए, हमने अपना उद्देश्य पाया। ट्रस्ट केवल उनके जीवन को श्रद्धांजलि नहीं है, बल्कि उनके मूल्यों को आगे बढ़ाने का वादा है।',
+      signature: 'संस्थापक',
+      established: 'स्थापित',
+      lineageTitle: 'परिवार · तीन पीढ़ियाँ',
+      patriarchLabel: 'की पावन स्मृति में',
+      patriarchName: 'श्री मूलचंद ताराचंद पुनामिया',
+      patriarchDesc: 'वह पिता जिनके जीवन और मूल्यों ने सब कुछ प्रेरित किया — ट्रस्ट की हर पहल के पीछे मार्गदर्शक प्रकाश।',
+      foundersLabel: 'द्वारा स्थापित',
+      foundersName: 'श्री नरेंद्र मूलचंद पुनामिया',
+      foundersDesc: 'वह पुत्र जिसने स्मृति को कर्म में बदला, अपने पिता की विरासत का सम्मान करने के लिए 2003 में ट्रस्ट की स्थापना की।',
+      successorsLabel: 'आगे बढ़ाया गया',
+      successorsName: 'नीमित और पुनीत पुनामिया',
+      successorsDesc: 'श्री नरेंद्र पुनामिया के पुत्र। वर्तमान पीढ़ी, दृष्टि का विस्तार कर रही है और करुणा के प्रति परिवार की प्रतिबद्धता को गहरा कर रही है।',
     },
     journey: {
       label: 'हमारी यात्रा',
@@ -288,19 +312,16 @@ const trustInfo = {
   phone: "+91 22 2801 XXXX",
 };
 
+// The image shown is of Shri Narendra Punamiya — the Founder
 const founderData = {
-  name: "Shri Mulchand Tarachand Punamiya",
+  name: "Shri Narendra Mulchand Punamiya",
   img: "/pics/late.png",
-  signature: "M. T. Punamiya",
+  signature: "N. M. Punamiya",
 };
 
 const journeyMilestones = [
-  { year: "2003" },
-  { year: "2008" },
-  { year: "2012" },
-  { year: "2016" },
-  { year: "2019" },
-  { year: "2024" },
+  { year: "2003" }, { year: "2008" }, { year: "2012" },
+  { year: "2016" }, { year: "2019" }, { year: "2024" },
 ];
 
 const trusteesData = [
@@ -308,11 +329,6 @@ const trusteesData = [
   { name: "Shri Punit Punamiya", img: "pics/trustee2.jpeg" },
 ];
 
-// ====================================================================
-// PROJECTS DATA
-// Each project has its own images[] and matching captions[]/captionsHi[].
-// Adding/removing images here ONLY affects that project's gallery page.
-// ====================================================================
 const projectsData = [
   {
     id: 'healthcare',
@@ -334,18 +350,9 @@ const projectsData = [
       "हर साल विशेष रूप से संस्थापक दिवस पर नेत्र शिविर आयोजित किया जाता है।"
     ],
     images: [
-      "pics/health1.jpeg",
-      "pics/health3.jpeg",
-      "pics/health4.png",
-      
-      "pics/health4.png",
-      "pics/health7.png",
-      "pics/health9.png",
-      "pics/health10.jpeg",
-      "pics/health11.jpeg",
-      "pics/health12.jpeg",
-      "pics/health15.jpeg",
-
+      "pics/health1.jpeg","pics/health3.jpeg","pics/health4.png","pics/health4.png",
+      "pics/health7.png","pics/health9.png","pics/health10.jpeg","pics/health11.jpeg",
+      "pics/health12.jpeg","pics/health15.jpeg",
     ],
     captions: [
       { text: "Medical Camp", tag: "Healthcare" },
@@ -380,29 +387,11 @@ const projectsData = [
       "गंभीर वित्तीय जरूरत वाले बच्चों की शिक्षा फीस का भुगतान।"
     ],
     images: [
-      "pics/edu2.jpeg",
-      "pics/edu1.jpeg",
-      
-      "pics/class1.jpeg",
-      "pics/sports2.jpeg",
-      "pics/edu3.jpeg",
-      "pics/edu4.jpeg",
-      "pics/edu5.jpeg",
-      "pics/edu6.jpeg",
-      "pics/edu7.jpeg",
-      "pics/edu8.jpeg",
-      
-      "pics/edu11.jpeg",
-      "pics/edu12.jpeg",
-      "pics/edu13.jpeg",
-      "pics/edu14.jpeg",
-      "pics/edu14.jpeg",
-      "pics/edu15.jpeg",
-      "pics/edu16.jpeg",
-      "pics/edu17.jpeg",
-      "pics/edu18.jpeg",
-      
-      
+      "pics/edu2.jpeg","pics/edu1.jpeg","pics/class1.jpeg","pics/sports2.jpeg",
+      "pics/edu3.jpeg","pics/edu4.jpeg","pics/edu5.jpeg","pics/edu6.jpeg",
+      "pics/edu7.jpeg","pics/edu8.jpeg","pics/edu11.jpeg","pics/edu12.jpeg",
+      "pics/edu13.jpeg","pics/edu14.jpeg","pics/edu14.jpeg","pics/edu15.jpeg",
+      "pics/edu16.jpeg","pics/edu17.jpeg","pics/edu18.jpeg",
     ],
     captions: [
       { text: "School Kits", tag: "Education" },
@@ -436,11 +425,7 @@ const projectsData = [
       "साक्षरता और पठन संस्कृति को बढ़ावा देने के लिए जागरूकता कार्यक्रम चलाना।",
       "डिजिटल शिक्षण प्रणालियों और शैक्षिक उपकरणों का समर्थन।"
     ],
-    images: [
-      "pics/library1.jpeg",
-      "pics/library2.jpeg",
-      "pics/library3.jpeg"
-    ],
+    images: ["pics/library1.jpeg","pics/library2.jpeg","pics/library3.jpeg"],
     captions: [
       { text: "Community Library", tag: "Library" },
       { text: "Reading Program", tag: "Library" },
@@ -471,14 +456,7 @@ const projectsData = [
       "बड़े पैमाने पर वृक्षारोपण अभियान आयोजित करना।",
       "स्वच्छता पहलों और स्वच्छ भारत गतिविधियों का समर्थन।"
     ],
-    images: [
-      "pics/enn2.jpeg",
-      "pics/enn1.jpeg",
-      "pics/enn4.jpeg",
-      "pics/en1.jpeg",
-      "pics/en2.jpeg",
-
-    ],
+    images: ["pics/enn2.jpeg","pics/enn1.jpeg","pics/enn4.jpeg","pics/en1.jpeg","pics/en2.jpeg"],
     captions: [
       { text: "Aravali Clean-Up", tag: "Environment" },
       { text: "Tree Plantation", tag: "Environment" },
@@ -509,11 +487,7 @@ const projectsData = [
       "ग्रामीण पशुओं के लिए पशु चिकित्सा शिविर आयोजित करना।",
       "ग्रामीण जीवन को बनाए रखने वाले जानवरों की देखभाल की व्यावहारिक अभिव्यक्ति।"
     ],
-    images: [
-      "pics/animal1.jpeg",
-      "pics/animal2.jpeg",
-      "pics/animal3.jpeg"
-    ],
+    images: ["pics/animal1.jpeg","pics/animal2.jpeg","pics/animal3.jpeg"],
     captions: [
       { text: "Pashu Hospital", tag: "Jeevdaya" },
       { text: "Chara Vitaran", tag: "Jeevdaya" },
@@ -545,9 +519,8 @@ const projectsData = [
       "सांस्कृतिक, सामाजिक जागरूकता और समुदाय विकास कार्यक्रम आयोजित करना।"
     ],
     images: [
-      "pics/family1.jpeg",
-      "pics/social1.jpeg",
-      "pics/social2.jpeg"
+      "pics/family1.jpeg","pics/social1.jpeg","pics/social2.jpeg","pics/s1.jpeg",
+      "pics/s2.jpeg","pics/s3.jpeg","pics/s4.jpeg","pics/s5.jpeg","pics/s6.jpeg","pics/s7.jpeg"
     ],
     captions: [
       { text: "Family Support", tag: "Social" },
@@ -562,17 +535,10 @@ const projectsData = [
   }
 ];
 
-// ====================================================================
-// HOME GALLERY (Life in Motion) — SEPARATE FROM PROJECT GALLERIES
-// This is the ONLY place that controls what shows up in the home page
-// "Life in Motion" section. Adding images to a project above will NOT
-// affect this list. Edit this array whenever you want to change the
-// home page gallery.
-// ====================================================================
 const homeGalleryImages = [
   { src: "pics/health1.jpeg",    en: { text: "Medical Camp",             tag: "Healthcare" },  hi: { text: "चिकित्सा शिविर",         tag: "स्वास्थ्य" } },
   { src: "pics/health3.jpeg",    en: { text: "Hospital Wing",            tag: "Healthcare" },  hi: { text: "अस्पताल विंग",            tag: "स्वास्थ्य" } },
-  { src: "pics/school2.jpeg",    en: { text: "School Kits",              tag: "Education" },   hi: { text: "स्कूल किट",              tag: "शिक्षा" } },
+  { src: "pics/edu2.jpeg",       en: { text: "School Kits",              tag: "Education" },   hi: { text: "स्कूल किट",              tag: "शिक्षा" } },
   { src: "pics/class1.jpeg",     en: { text: "Classroom Support",        tag: "Education" },   hi: { text: "कक्षा सहायता",           tag: "शिक्षा" } },
   { src: "pics/sports2.jpeg",    en: { text: "Extracurricular Activities", tag: "Education" }, hi: { text: "पाठ्येतर गतिविधियाँ",     tag: "शिक्षा" } },
   { src: "pics/library1.jpeg",   en: { text: "Community Library",        tag: "Library" },     hi: { text: "समुदाय पुस्तकालय",        tag: "पुस्तकालय" } },
@@ -582,7 +548,7 @@ const homeGalleryImages = [
   { src: "pics/animal1.jpeg",    en: { text: "Pashu Hospital",           tag: "Jeevdaya" },    hi: { text: "पशु अस्पताल",            tag: "जीवदया" } },
   { src: "pics/animal2.jpeg",    en: { text: "Chara Vitaran",            tag: "Jeevdaya" },    hi: { text: "चारा वितरण",             tag: "जीवदया" } },
   { src: "pics/family1.jpeg",    en: { text: "Family Support",           tag: "Social" },      hi: { text: "परिवार सहायता",          tag: "सामाजिक" } },
-  // src: "pics/social1.jpeg",    en: { text: "Relief Distribution",      tag: "Social" },      hi: { text: "राहत वितरण",             tag: "सामाजिक" } },
+  { src: "pics/social1.jpeg",    en: { text: "Relief Distribution",      tag: "Social" },      hi: { text: "राहत वितरण",             tag: "सामाजिक" } },
 ].map((entry) => ({
   src: entry.src,
   caption: entry.en.text,
@@ -596,7 +562,6 @@ const heroImages = [
   "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2813&auto=format&fit=crop"
 ];
 
-// Helper to localize project object
 const localizeProject = (p, isHindi) => isHindi ? {
   ...p,
   title: p.titleHi || p.title,
@@ -604,7 +569,7 @@ const localizeProject = (p, isHindi) => isHindi ? {
   details: p.detailsHi || p.details,
 } : p;
 
-// --- HOOK: MOBILE DETECT ---
+// --- HOOKS ---
 const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -616,7 +581,7 @@ const useIsMobile = () => {
   return isMobile;
 };
 
-// --- GRAIN OVERLAY (disabled on mobile) ---
+// --- GRAIN OVERLAY ---
 const GrainOverlay = () => (
   <div
     className="hidden md:block pointer-events-none fixed inset-0 z-[150] opacity-[0.05] mix-blend-overlay"
@@ -639,17 +604,17 @@ const ScrollProgress = () => {
   );
 };
 
-// --- FADE IN ---
+// --- FADE IN with blur reveal ---
 const FadeIn = ({ children, delay = 0, direction = 'up', className = '', distance = 60 }) => {
   const dirs = { up: { y: distance, x: 0 }, down: { y: -distance, x: 0 }, left: { x: distance, y: 0 }, right: { x: -distance, y: 0 }, none: { x: 0, y: 0 } };
   const d = dirs[direction] || dirs.up;
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, ...d, scale: 0.97 }}
-      whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+      initial={{ opacity: 0, ...d, filter: 'blur(8px)' }}
+      whileInView={{ opacity: 1, x: 0, y: 0, filter: 'blur(0px)' }}
       viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.9, delay: delay / 1000, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 1, delay: delay / 1000, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}
     </motion.div>
@@ -709,7 +674,7 @@ const MagneticButton = ({ children, className = '', onClick }) => {
   );
 };
 
-// --- ROTATING BADGE (disabled on mobile) ---
+// --- ROTATING BADGE ---
 const RotatingBadge = ({ text = "• COMPASSION • IN • PRACTICE • SINCE • 2003 ", color = "#C28C54" }) => (
   <motion.div
     animate={{ rotate: 360 }}
@@ -952,6 +917,7 @@ const CinematicHero = () => {
           </div>
         ))}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1A362D]/85 via-[#1A362D]/45 to-[#1A362D]/95" />
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.35) 100%)' }} />
       </motion.div>
 
       {!isMobile && (
@@ -978,7 +944,7 @@ const CinematicHero = () => {
             </motion.span>
           ))}
           <br />
-          <motion.span className="italic font-light"
+          <motion.span className="italic font-light bg-clip-text text-transparent bg-gradient-to-r from-[#F7F5F0] via-[#E0A96D] to-[#F7F5F0]"
             initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 1.1 }}>
             {t.hero.line2}
           </motion.span>
@@ -993,13 +959,13 @@ const CinematicHero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <MagneticButton
             onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
-            className={`${theme.accentBg} text-[#F7F5F0] hover:bg-[#A37341] px-10 py-4 rounded-full uppercase tracking-widest text-sm font-semibold transition-colors shadow-2xl`}
+            className={`${theme.accentBg} text-[#F7F5F0] hover:bg-[#A37341] px-10 py-4 rounded-full uppercase tracking-widest text-sm font-semibold transition-all shadow-[0_10px_40px_rgba(194,140,84,0.4)] hover:shadow-[0_15px_50px_rgba(194,140,84,0.6)]`}
           >
             {t.hero.explore}
           </MagneticButton>
           <MagneticButton
             onClick={() => document.getElementById('founder').scrollIntoView({ behavior: 'smooth' })}
-            className={`border-2 border-white/40 text-white hover:border-[#C28C54] hover:text-[#C28C54] px-10 py-4 rounded-full uppercase tracking-widest text-sm font-semibold transition-colors backdrop-blur-sm`}
+            className={`border-2 border-white/40 text-white hover:border-[#C28C54] hover:text-[#C28C54] px-10 py-4 rounded-full uppercase tracking-widest text-sm font-semibold transition-all backdrop-blur-sm`}
           >
             {t.hero.ourFounder}
           </MagneticButton>
@@ -1035,11 +1001,12 @@ const StatsSection = () => {
         ].map((stat, idx) => (
           <motion.div key={idx}
             initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: idx * 0.12 }} className="text-center py-4">
+            transition={{ duration: 0.6, delay: idx * 0.12 }} className="text-center py-4 relative">
             <h3 className="text-4xl md:text-6xl lg:text-7xl font-serif text-[#1A362D] font-bold mb-3">
               <AnimatedCounter target={stat.value} suffix={stat.suffix} />
             </h3>
             <p className="uppercase tracking-widest text-xs md:text-sm text-white font-semibold">{stat.label}</p>
+            {idx !== 3 && <div className="hidden md:block absolute right-0 top-1/4 h-1/2 w-[1px] bg-white/20"></div>}
           </motion.div>
         ))}
       </div>
@@ -1073,7 +1040,7 @@ const AboutSection = () => {
                 <span className={`${theme.accentText} uppercase tracking-widest text-sm font-bold`}>{t.about.history}</span>
               </div>
               <h2 className={`text-4xl md:text-5xl lg:text-6xl font-serif ${theme.textDark} leading-tight`}>
-                {t.about.heading1} <span className="italic">{t.about.heading2}</span>
+                {t.about.heading1} <span className="italic text-[#C28C54]">{t.about.heading2}</span>
               </h2>
             </FadeIn>
             <FadeIn delay={200}>
@@ -1084,8 +1051,11 @@ const AboutSection = () => {
               </p>
             </FadeIn>
             <FadeIn delay={300}>
-              <div className={`p-6 md:p-8 ${theme.bgAlt} rounded-2xl border border-[#1A362D]/5 mt-6`}>
-                <h3 className={`text-xl font-serif ${theme.textDark} mb-4`}>{t.about.regTitle}</h3>
+              <div className={`p-6 md:p-8 ${theme.bgAlt} rounded-2xl border border-[#1A362D]/5 mt-6 shadow-sm`}>
+                <h3 className={`text-xl font-serif ${theme.textDark} mb-4 flex items-center gap-2`}>
+                  <svg className="w-5 h-5 text-[#C28C54]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  {t.about.regTitle}
+                </h3>
                 <ul className={`space-y-2 text-[#1A362D]/80 font-mono text-xs md:text-sm break-words`}>
                   <li><strong>{t.about.regdNo}</strong> {trustInfo.regNo}</li>
                   <li><strong>{t.about.pan}</strong> {trustInfo.pan}</li>
@@ -1157,7 +1127,7 @@ const TrusteesSection = () => {
           <div className="text-center mb-16">
             <span className={`${theme.accentText} uppercase tracking-widest text-sm font-bold block mb-4`}>{t.trustees.leadership}</span>
             <h3 className={`text-4xl md:text-5xl lg:text-6xl font-serif ${theme.textDark}`}>
-              {t.trustees.heading1} <span className="italic">{t.trustees.heading2}</span>
+              {t.trustees.heading1} <span className="italic text-[#C28C54]">{t.trustees.heading2}</span>
             </h3>
             <p className="text-[#1A362D]/60 mt-4 max-w-2xl mx-auto text-lg">
               {t.trustees.desc}
@@ -1187,7 +1157,7 @@ const TrusteesSection = () => {
               <motion.div
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="relative w-56 h-56 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden border-[6px] border-white shadow-2xl group-hover:border-[#C28C54] transition-colors duration-500"
+                className="relative w-56 h-56 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden border-[6px] border-white shadow-xl group-hover:border-[#C28C54] group-hover:shadow-2xl transition-all duration-500"
               >
                 <img
                   src={trustee.img}
@@ -1223,97 +1193,277 @@ const TrusteesSection = () => {
   );
 };
 
-// --- FOUNDER / IN MEMORY SPOTLIGHT ---
+// ====================================================================
+// REDESIGNED LEGACY SECTION — SIMPLE, ELEGANT, STORY-DRIVEN
+// ====================================================================
 const FounderSpotlight = () => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
   const isMobile = useIsMobile();
   const ref = useRef(null);
+
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const bgText = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
-  const imgY = useTransform(scrollYProgress, [0, 1], ["-5%", "5%"]);
+  const imgY = useTransform(scrollYProgress, [0, 1], ["-6%", "6%"]);
+  const bgTextX = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+
+  const lineage = [
+    {
+      roman: 'I',
+      label: t.founder.patriarchLabel,
+      name: t.founder.patriarchName,
+      desc: t.founder.patriarchDesc,
+      highlight: false,
+    },
+    {
+      roman: 'II',
+      label: t.founder.foundersLabel,
+      name: t.founder.foundersName,
+      desc: t.founder.foundersDesc,
+      highlight: true,
+    },
+    {
+      roman: 'III',
+      label: t.founder.successorsLabel,
+      name: t.founder.successorsName,
+      desc: t.founder.successorsDesc,
+      highlight: false,
+    },
+  ];
 
   return (
     <section ref={ref} id="founder" className="relative py-24 md:py-32 bg-[#1A362D] overflow-hidden">
-      <motion.div style={isMobile ? {} : { x: bgText }} className="hidden md:flex absolute inset-y-0 -left-1/4 items-center pointer-events-none whitespace-nowrap">
-        <span className="text-[22vw] font-serif text-[#C28C54]/[0.06] leading-none">MEMORY</span>
-        <span className="text-[22vw] font-serif text-[#C28C54]/[0.06] leading-none ml-20">LEGACY</span>
-        <span className="text-[22vw] font-serif text-[#C28C54]/[0.06] leading-none ml-20">LOVE</span>
+
+      {/* Background typography */}
+      <motion.div
+        style={isMobile ? {} : { x: bgTextX }}
+        className="absolute top-1/4 -left-1/4 pointer-events-none whitespace-nowrap opacity-[0.03]"
+      >
+        <span className="text-[16vw] font-serif italic text-[#C28C54] leading-none">A Legacy of Compassion</span>
       </motion.div>
 
-      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/40 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/40 to-transparent" />
+      {/* Top / bottom ornamental borders */}
+      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/50 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/50 to-transparent" />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-        <motion.div style={isMobile ? {} : { y: imgY }} className="lg:col-span-5 relative">
-          <FadeIn direction="right">
-            <div className="relative mx-auto max-w-md">
-              <motion.div
-                className="hidden md:block absolute -inset-6 rounded-full border border-[#C28C54]/30"
-                animate={{ rotate: 360 }} transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-                style={{ borderStyle: 'dashed' }}
-              />
-              <motion.div
-                className="hidden md:block absolute -inset-12 rounded-full border border-[#C28C54]/15"
-                animate={{ rotate: -360 }} transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-                style={{ borderStyle: 'dotted' }}
-              />
+      {/* Radial glow */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-[#C28C54]/[0.05] blur-[120px] pointer-events-none" />
 
-              <div className="relative w-full aspect-square rounded-full overflow-hidden border-8 border-[#C28C54]/30 shadow-2xl">
-                <img src={founderData.img} alt={founderData.name}
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1A362D]/40 to-transparent" />
-              </div>
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
 
-              <motion.div
-                animate={{ y: [0, -12, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -right-2 md:right-4 bg-[#C28C54] text-[#1A362D] rounded-full px-5 py-3 shadow-2xl">
-                <p className="font-serif font-bold text-sm leading-tight text-center">
-                  {t.founder.founder}<br /><span className="text-[10px] tracking-widest uppercase">2003</span>
-                </p>
-              </motion.div>
+        {/* ============ HEADER ============ */}
+        <FadeIn>
+          <div className="text-center mb-16 md:mb-20">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <span className="w-12 md:w-16 h-[1px] bg-gradient-to-r from-transparent to-[#C28C54]" />
+              <span className={`${theme.accentText} uppercase tracking-[0.35em] text-[10px] md:text-xs font-bold`}>
+                {t.founder.ourFounder}
+              </span>
+              <span className="w-12 md:w-16 h-[1px] bg-gradient-to-l from-transparent to-[#C28C54]" />
             </div>
-          </FadeIn>
-        </motion.div>
-
-        <div className="lg:col-span-7 text-white">
-          <FadeIn>
-            <span className={`${theme.accentText} uppercase tracking-widest text-sm font-bold block mb-5 flex items-center gap-3`}>
-              <span className="w-8 h-[1px] bg-[#C28C54]"></span>
-              {t.founder.ourFounder} · {t.founder.title}
-            </span>
-          </FadeIn>
-          <FadeIn delay={100}>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif mb-6 leading-tight">
-              {t.founder.heading1} <br />
-              <span className="italic text-[#C28C54]">{founderData.name}</span>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-[1.05] mb-5">
+              The vision of <span className="italic text-[#C28C54]">Narendra Punamiya</span>
             </h2>
-          </FadeIn>
-          <FadeIn delay={200}>
-            <blockquote className="text-xl md:text-2xl font-serif italic text-white/85 leading-relaxed mb-8 border-l-4 border-[#C28C54] pl-6 py-2">
-              &quot;{t.founder.quote}&quot;
-            </blockquote>
-          </FadeIn>
-          <FadeIn delay={300}>
-            <p className="text-lg text-white/60 font-light leading-relaxed mb-10 max-w-2xl">
-              {t.founder.bio}
+            <p className="text-white/50 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+              {t.founder.subtitle}
             </p>
-          </FadeIn>
-          <FadeIn delay={400}>
-            <div className="flex items-center gap-6">
-              <div>
-                <p className="text-[10px] tracking-widest uppercase text-[#C28C54] font-bold mb-1">{t.founder.signed}</p>
-                <p className="font-serif italic text-3xl md:text-4xl text-[#C28C54]">
-                  {founderData.signature}
+          </div>
+        </FadeIn>
+
+        {/* ============ PORTRAIT + STORY ============ */}
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center mb-24 md:mb-32">
+
+          {/* Portrait of Narendra (the Founder) */}
+          <motion.div style={isMobile ? {} : { y: imgY }} className="lg:col-span-5 flex justify-center relative">
+            <FadeIn direction="right">
+              <div className="relative">
+                {/* Rotating outer ring */}
+                <motion.div
+                  className="absolute -inset-8 rounded-full border border-[#C28C54]/25"
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                  style={{ borderStyle: 'dashed' }}
+                />
+                {/* Rotating inner ring */}
+                <motion.div
+                  className="absolute -inset-12 rounded-full border border-[#C28C54]/10"
+                  animate={{ rotate: -360 }}
+                  transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
+                  style={{ borderStyle: 'dotted' }}
+                />
+                {/* Orbiting gold dot */}
+                <motion.div
+                  className="absolute -inset-8 rounded-full"
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                >
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full bg-[#C28C54] shadow-[0_0_20px_rgba(194,140,84,1)]" />
+                </motion.div>
+                {/* Second orbiting dot */}
+                <motion.div
+                  className="absolute -inset-12 rounded-full"
+                  animate={{ rotate: -360 }}
+                  transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
+                >
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-1.5 h-1.5 rounded-full bg-[#C28C54]/70 shadow-[0_0_12px_rgba(194,140,84,0.7)]" />
+                </motion.div>
+
+                {/* Portrait */}
+                <motion.div
+                  whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                  className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] rounded-full overflow-hidden border-[8px] border-[#C28C54]/40 shadow-[0_0_100px_rgba(194,140,84,0.3)] z-10"
+                >
+                  <img
+                    src={founderData.img}
+                    alt={founderData.name}
+                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A362D]/70 via-transparent to-transparent" />
+                </motion.div>
+
+                {/* Floating "Founder" badge */}
+                <motion.div
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute -bottom-2 right-2 md:right-6 bg-gradient-to-br from-[#C28C54] to-[#A37341] text-[#1A362D] rounded-2xl px-5 md:px-6 py-3 md:py-3.5 shadow-[0_15px_50px_rgba(0,0,0,0.6)] border-2 border-[#1A362D] z-20"
+                >
+                  <p className="font-serif font-bold text-sm md:text-base leading-tight text-center">
+                    {t.founder.signature}
+                    <br />
+                    <span className="text-[10px] tracking-widest uppercase opacity-80">{t.founder.established} 2003</span>
+                  </p>
+                </motion.div>
+              </div>
+            </FadeIn>
+          </motion.div>
+
+          {/* Story */}
+          <div className="lg:col-span-7 text-white">
+            <FadeIn delay={100}>
+              <p className={`${theme.accentText} uppercase tracking-[0.3em] text-xs font-bold mb-4`}>
+                {t.founder.founderLabel}
+              </p>
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6 leading-tight">
+                {t.founder.founderName}
+              </h3>
+              <p className="text-white/70 text-lg leading-relaxed mb-8">
+                {t.founder.founderDesc}
+              </p>
+            </FadeIn>
+
+            {/* Quote */}
+            <FadeIn delay={200}>
+              <div className="relative pl-6 md:pl-8 border-l-2 border-[#C28C54]/60 mb-8">
+                <svg className="absolute -top-3 -left-3 w-8 h-8 text-[#C28C54]/25" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                </svg>
+                <p className="text-xl md:text-2xl lg:text-[1.75rem] font-serif italic text-white/90 leading-relaxed">
+                  {t.founder.quote}
                 </p>
               </div>
-              <div className="hidden sm:block w-[1px] h-12 bg-white/20" />
-              <div className="hidden sm:block">
-                <p className="text-[10px] tracking-widest uppercase text-white/40 font-bold mb-1">{t.founder.since}</p>
-                <p className="font-serif text-2xl text-white/80">2003</p>
+            </FadeIn>
+
+            {/* Signature row */}
+            <FadeIn delay={300}>
+              <div className="flex items-center gap-6">
+                <div>
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-[#C28C54] font-bold mb-1">{t.founder.signature}</p>
+                  <p className="font-serif italic text-2xl md:text-3xl text-white/90">{founderData.signature}</p>
+                </div>
+                <div className="flex-1 h-[1px] bg-gradient-to-r from-[#C28C54]/40 to-transparent" />
+                <div className="text-right">
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-white/40 font-bold mb-1">{t.founder.established}</p>
+                  <p className="font-serif text-xl md:text-2xl text-[#C28C54]">2003</p>
+                </div>
               </div>
-            </div>
-          </FadeIn>
+            </FadeIn>
+          </div>
+        </div>
+
+        {/* ============ LINEAGE — 3 GENERATIONS ============ */}
+        <FadeIn>
+          <div className="text-center mb-10 md:mb-14">
+            <span className="inline-block px-6 py-2 rounded-full border border-[#C28C54]/30 text-[#C28C54] text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold">
+              {t.founder.lineageTitle}
+            </span>
+          </div>
+        </FadeIn>
+
+        {/* Desktop: horizontal chain */}
+        <div className="hidden md:block relative">
+          {/* Connecting line */}
+          <div className="absolute top-1/2 left-[10%] right-[10%] -translate-y-1/2 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/50 to-transparent" />
+
+          <div className="grid grid-cols-3 gap-6 relative">
+            {lineage.map((item, idx) => (
+              <FadeIn key={idx} delay={idx * 150}>
+                <div className="relative group h-full">
+                  {/* Node dot */}
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+                    <motion.div
+                      animate={{ scale: [1, 1.5, 1], opacity: [1, 0.6, 1] }}
+                      transition={{ duration: 2.5, repeat: Infinity, delay: idx * 0.5, ease: "easeInOut" }}
+                      className={`w-3.5 h-3.5 rounded-full ${item.highlight ? 'bg-[#C28C54] shadow-[0_0_25px_rgba(194,140,84,1)]' : 'bg-[#C28C54]/60 shadow-[0_0_12px_rgba(194,140,84,0.6)]'}`}
+                    />
+                  </div>
+
+                  <div className={`relative bg-gradient-to-br from-white/[0.07] to-white/[0.02] border ${item.highlight ? 'border-[#C28C54]/50' : 'border-white/10'} rounded-2xl p-6 pt-10 hover:border-[#C28C54]/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)]`}>
+                    <div className="text-center mb-3">
+                      <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-[#C28C54]/60">
+                        Generation · {item.roman}
+                      </span>
+                    </div>
+                    <p className="text-[10px] tracking-[0.25em] uppercase text-[#C28C54] font-bold text-center mb-3">
+                      {item.label}
+                    </p>
+                    <h4 className="text-xl md:text-2xl font-serif text-white text-center mb-3 leading-tight">
+                      {item.name}
+                    </h4>
+                    <p className="text-white/60 text-sm leading-relaxed text-center">
+                      {item.desc}
+                    </p>
+
+                    {item.highlight && (
+                      <div className="absolute -top-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-[#C28C54] text-[#1A362D] text-[9px] font-bold uppercase tracking-widest rounded-full shadow-lg">
+                        Founder
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile: vertical chain */}
+        <div className="md:hidden relative">
+          <div className="absolute left-4 top-4 bottom-4 w-[1px] bg-gradient-to-b from-transparent via-[#C28C54]/40 to-transparent" />
+
+          <div className="space-y-5">
+            {lineage.map((item, idx) => (
+              <FadeIn key={idx} delay={idx * 100}>
+                <div className="relative pl-12">
+                  <motion.div
+                    animate={{ scale: [1, 1.35, 1], opacity: [1, 0.7, 1] }}
+                    transition={{ duration: 2.5, repeat: Infinity, delay: idx * 0.5 }}
+                    className={`absolute left-[10px] top-6 w-3 h-3 rounded-full ${item.highlight ? 'bg-[#C28C54] shadow-[0_0_20px_rgba(194,140,84,1)]' : 'bg-[#C28C54]/60'} z-10`}
+                  />
+
+                  <div className={`relative bg-gradient-to-br from-white/[0.07] to-white/[0.02] border ${item.highlight ? 'border-[#C28C54]/50' : 'border-white/10'} rounded-2xl p-5`}>
+                    {item.highlight && (
+                      <div className="absolute -top-2 right-4 px-2.5 py-0.5 bg-[#C28C54] text-[#1A362D] text-[8px] font-bold uppercase tracking-widest rounded-full shadow-lg">
+                        Founder
+                      </div>
+                    )}
+                    <p className="text-[9px] tracking-[0.25em] uppercase text-[#C28C54]/70 font-bold mb-1">Gen · {item.roman}</p>
+                    <p className="text-[9px] tracking-[0.2em] uppercase text-[#C28C54] font-bold mb-2">{item.label}</p>
+                    <h4 className="text-lg font-serif text-white mb-2">{item.name}</h4>
+                    <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -1337,7 +1487,7 @@ const JourneyTimeline = () => {
           <div className="text-center mb-20">
             <span className={`${theme.accentText} uppercase tracking-widest text-sm font-bold block mb-4`}>{t.journey.label}</span>
             <h2 className={`text-4xl md:text-5xl lg:text-6xl font-serif ${theme.textDark} leading-tight`}>
-              {t.journey.heading1} <span className="italic">{t.journey.heading2}</span>
+              {t.journey.heading1} <span className="italic text-[#C28C54]">{t.journey.heading2}</span>
             </h2>
             <p className="text-[#1A362D]/60 mt-6 max-w-2xl mx-auto text-lg">
               {t.journey.desc}
@@ -1360,7 +1510,7 @@ const JourneyTimeline = () => {
                 className={`relative flex items-center mb-12 md:mb-16 ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}
               >
                 <div className={`ml-12 md:ml-0 md:w-1/2 ${isLeft ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
-                  <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-[#1A362D]/5 hover:shadow-2xl transition-shadow duration-500 group">
+                  <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-[#1A362D]/5 hover:shadow-2xl transition-all duration-500 group hover:-translate-y-1">
                     <div className="flex items-center gap-3 mb-3" style={{ justifyContent: isLeft ? 'flex-end' : 'flex-start' }}>
                       <span className={`text-xs font-bold tracking-widest uppercase ${theme.accentText}`}>{m.year}</span>
                       <span className="w-8 h-[1px] bg-[#C28C54]" />
@@ -1389,16 +1539,11 @@ const JourneyTimeline = () => {
   );
 };
 
-// --- MASONRY GALLERY (Life in Motion) ---
-// FIX: Now uses `homeGalleryImages` (defined near the top of the file) —
-// a completely separate list from the project images. Adding an image to
-// any project will NOT make it appear here. To change the home gallery,
-// edit `homeGalleryImages` only.
+// --- MASONRY GALLERY ---
 const HomeMasonryGallery = ({ onImageClick }) => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
 
-  // Build final list with language-aware captions
   const galleryItems = homeGalleryImages.map((entry, idx) => ({
     src: entry.src,
     caption: isHindi ? entry.captionHi : entry.caption,
@@ -1439,75 +1584,69 @@ const HomeMasonryGallery = ({ onImageClick }) => {
             {t.gallery.label}
           </span>
           <h2 className={`text-4xl md:text-5xl font-serif ${theme.textDark}`}>
-            {t.gallery.heading1} <span className="italic">{t.gallery.heading2}</span>
+            {t.gallery.heading1} <span className="italic text-[#C28C54]">{t.gallery.heading2}</span>
           </h2>
           <p className="text-[#1A362D]/60 mt-4 max-w-2xl mx-auto text-lg">
             {t.gallery.desc}
           </p>
         </motion.div>
 
-        {galleryItems.length === 0 ? (
-          <div className="text-center py-20 text-[#1A362D]/40">
-            <p className="text-lg font-serif italic">Add images to <code className="font-mono text-sm bg-[#1A362D]/5 px-2 py-1 rounded">homeGalleryImages</code> to populate this section.</p>
-          </div>
-        ) : (
-          <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-            {galleryItems.map((item, idx) => {
-              const anim = enterAnimations[idx % enterAnimations.length];
-              return (
-                <motion.div
-                  key={`${item.src}-${idx}`}
-                  initial={anim.initial}
-                  whileInView={{ opacity: 1, x: 0, y: 0, rotate: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.7, delay: (idx % 4) * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                  whileHover={{ scale: 1.04, zIndex: 20, rotate: 1 }}
-                  className="break-inside-avoid rounded-xl overflow-hidden shadow-md hover:shadow-2xl cursor-zoom-in relative group"
-                  onClick={() => onImageClick(item.src)}
-                >
-                  <div className="overflow-hidden">
-                    <img
-                      src={item.src}
-                      loading="lazy"
-                      alt={item.caption}
-                      className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-[900ms] ease-out"
-                    />
-                  </div>
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+          {galleryItems.map((item, idx) => {
+            const anim = enterAnimations[idx % enterAnimations.length];
+            return (
+              <motion.div
+                key={`${item.src}-${idx}`}
+                initial={anim.initial}
+                whileInView={{ opacity: 1, x: 0, y: 0, rotate: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.7, delay: (idx % 4) * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                whileHover={{ scale: 1.04, zIndex: 20, rotate: 1 }}
+                className="break-inside-avoid rounded-xl overflow-hidden shadow-md hover:shadow-2xl cursor-zoom-in relative group"
+                onClick={() => onImageClick(item.src)}
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={item.src}
+                    loading="lazy"
+                    alt={item.caption}
+                    className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-[900ms] ease-out"
+                  />
+                </div>
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A362D]/95 via-[#1A362D]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1A362D]/95 via-[#1A362D]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
 
-                  <div className="absolute top-3 right-3 z-30 opacity-0 group-hover:opacity-100 transform -translate-y-2 group-hover:translate-y-0 transition-all duration-500">
-                    <span className="bg-[#C28C54] text-[#1A362D] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
-                      {item.tag}
-                    </span>
-                  </div>
+                <div className="absolute top-3 right-3 z-30 opacity-0 group-hover:opacity-100 transform -translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                  <span className="bg-[#C28C54] text-[#1A362D] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
+                    {item.tag}
+                  </span>
+                </div>
 
-                  <div className="absolute bottom-0 left-0 right-0 p-4 z-30 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
-                    <p className="text-white font-serif text-lg leading-tight">{item.caption}</p>
-                    <div className="flex items-center gap-2 mt-2 text-[#C28C54] text-[10px] font-bold uppercase tracking-widest">
-                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                      </svg>
-                      {t.gallery.view}
-                    </div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 z-30 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                  <p className="text-white font-serif text-lg leading-tight">{item.caption}</p>
+                  <div className="flex items-center gap-2 mt-2 text-[#C28C54] text-[10px] font-bold uppercase tracking-widest">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                    {t.gallery.view}
                   </div>
+                </div>
 
-                  <div className="absolute top-3 left-3 z-30 group-hover:opacity-0 transition-opacity duration-300">
-                    <span className="bg-[#1A362D]/70 backdrop-blur-sm text-white/90 text-[10px] font-bold px-2 py-1 rounded">
-                      {String(idx + 1).padStart(2, '0')}
-                    </span>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-        )}
+                <div className="absolute top-3 left-3 z-30 group-hover:opacity-0 transition-opacity duration-300">
+                  <span className="bg-[#1A362D]/70 backdrop-blur-sm text-white/90 text-[10px] font-bold px-2 py-1 rounded">
+                    {String(idx + 1).padStart(2, '0')}
+                  </span>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
 };
 
-// --- HORIZONTAL PROJECTS (desktop) ---
+// --- HORIZONTAL PROJECTS ---
 const HorizontalProjects = ({ onImageClick, setCurrentView }) => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
@@ -1525,7 +1664,7 @@ const HorizontalProjects = ({ onImageClick, setCurrentView }) => {
           </motion.span>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             transition={{ delay: 0.1 }} className="text-4xl md:text-6xl font-serif text-white">
-            {t.projectsSection.heading1} <span className="italic">{t.projectsSection.heading2}</span>
+            {t.projectsSection.heading1} <span className="italic text-[#C28C54]">{t.projectsSection.heading2}</span>
           </motion.h2>
         </div>
 
@@ -1576,7 +1715,7 @@ const MobileProjectsList = ({ onImageClick, setCurrentView }) => {
         <span className={`${theme.accentText} uppercase tracking-widest text-sm font-bold block mb-4`}>
           {t.projectsSection.label}
         </span>
-        <h2 className="text-4xl font-serif text-white">{t.projectsSection.heading1} <span className="italic">{t.projectsSection.heading2}</span></h2>
+        <h2 className="text-4xl font-serif text-white">{t.projectsSection.heading1} <span className="italic text-[#C28C54]">{t.projectsSection.heading2}</span></h2>
       </div>
       <div className="space-y-8 px-6">
         {projectsData.map((rawProject) => {
@@ -1678,7 +1817,7 @@ const TestimonialsSection = () => {
           <div className="text-center mb-14">
             <span className={`${theme.accentText} uppercase tracking-widest text-sm font-bold block mb-4`}>{t.testimonials.label}</span>
             <h2 className={`text-4xl md:text-5xl font-serif ${theme.textDark}`}>
-              {t.testimonials.heading1} <span className="italic">{t.testimonials.heading2}</span>
+              {t.testimonials.heading1} <span className="italic text-[#C28C54]">{t.testimonials.heading2}</span>
             </h2>
           </div>
         </FadeIn>
@@ -1770,7 +1909,7 @@ const ProjectDetailView = ({ project: rawProject, setCurrentView, onImageClick }
                 <motion.div key={idx}
                   initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                   transition={{ delay: idx * 0.1, duration: 0.5 }}
-                  className={`p-6 rounded-2xl border border-[#1A362D]/10 bg-white shadow-sm flex items-start gap-4`}>
+                  className={`p-6 rounded-2xl border border-[#1A362D]/10 bg-white shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow`}>
                   <span className={`w-8 h-8 rounded-full ${theme.accentBg} text-white flex items-center justify-center flex-shrink-0 mt-1`}>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
@@ -1796,7 +1935,7 @@ const ProjectDetailView = ({ project: rawProject, setCurrentView, onImageClick }
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: (idx % 4) * 0.06 }}
                 whileHover={{ scale: 1.02, zIndex: 10 }}
-                className="break-inside-avoid rounded-xl overflow-hidden shadow-md cursor-zoom-in group relative"
+                className="break-inside-avoid rounded-xl overflow-hidden shadow-md hover:shadow-xl cursor-zoom-in group relative"
                 onClick={() => onImageClick(src)}>
                 <div className="absolute inset-0 bg-[#1A362D]/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
                 <img src={src} loading="lazy" alt={`Gallery ${idx + 1}`} className="w-full h-auto object-cover" />
@@ -1995,12 +2134,7 @@ const HomeView = ({ setCurrentView, onImageClick }) => {
   return (
     <>
       <CinematicHero />
-      <MarqueeBanner
-        items={t.marquee}
-        bg="#C28C54"
-        textColor="#1A362D"
-        accent="#1A362D"
-      />
+      <MarqueeBanner items={t.marquee} bg="#C28C54" textColor="#1A362D" accent="#1A362D" />
       <StatsSection />
       <AboutSection />
       <TrusteesSection />
