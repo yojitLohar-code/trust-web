@@ -58,20 +58,20 @@ const translations = {
     founder: {
       ourFounder: 'Our Legacy',
       eyebrow: 'The Founder',
-      title: 'The vision of Narendra Punamiya',
+      title: 'The vision of Late Shri Narendra Punamiya',
       subtitle: 'A promise made in memory of a father — carried forward by a family, sustained by a community.',
       founderLabel: 'Founder & Visionary',
-      founderName: 'Shri Narendra Mulchand Punamiya',
+      founderName: 'Late Shri Narendra Mulchand Punamiya',
       founderDesc: 'In 2003, Shri Narendra Punamiya transformed the loss of his father into a living mission — establishing the Trust in loving memory of Shri Mulchand Tarachand Punamiya, and dedicating his life to compassionate service across health, education, environment, and animal welfare.',
       quote: 'In remembering our father, we found our purpose. The Trust is not just a tribute to his life, but a promise to carry his values forward.',
       signature: 'Founder',
       established: 'Established',
       lineageTitle: 'The Family · Three Generations',
       patriarchLabel: 'In Loving Memory Of',
-      patriarchName: 'Shri Mulchand Tarachand Punamiya',
+      patriarchName: 'Late Shri Mulchand Tarachand Punamiya',
       patriarchDesc: 'The father whose life and values inspired it all — the guiding light behind every initiative of the Trust.',
       foundersLabel: 'Founded By',
-      foundersName: 'Shri Narendra Mulchand Punamiya',
+      foundersName: 'Late Shri Narendra Mulchand Punamiya',
       foundersDesc: 'The son who turned remembrance into action, establishing the Trust in 2003 to honor his father\'s legacy.',
       successorsLabel: 'Carried Forward By',
       successorsName: 'Neemit & Punit Punamiya',
@@ -303,7 +303,7 @@ const trustInfo = {
   name: "Shri Mulchand Tarachand Punamiya Charitable Trust",
   founded: "27th November 2003",
   foundedHi: "27 नवंबर 2003",
-  founder: "Shri Narendra Mulchand Punamiya",
+  founder: "Late Shri Narendra Mulchand Punamiya",
   regNo: "E21650",
   pan: "AADTS9660B",
   address: "‘Punit’, Himachal CHS Ltd., Opp. Sundar Nagar, S.V. Road, Malad (West), Mumbai – 400 064.",
@@ -314,7 +314,7 @@ const trustInfo = {
 
 // The image shown is of Shri Narendra Punamiya — the Founder
 const founderData = {
-  name: "Shri Narendra Mulchand Punamiya",
+  name: "Late Shri Narendra Mulchand Punamiya",
   img: "/pics/late.png",
   signature: "N. M. Punamiya",
 };
@@ -456,7 +456,7 @@ const projectsData = [
       "बड़े पैमाने पर वृक्षारोपण अभियान आयोजित करना।",
       "स्वच्छता पहलों और स्वच्छ भारत गतिविधियों का समर्थन।"
     ],
-    images: ["pics/enn2.jpeg","pics/enn1.jpeg","pics/enn4.jpeg","pics/en1.jpeg","pics/en2.jpeg","pics/en11.jpeg","pics/en12.jpeg","pics/en13.jpeg","pics/en14.jpeg","pics/en15.jpeg","pics/en16.jpeg","pics/en17.jpeg","pics/en18.jpeg","pics/en19.jpeg","pics/en20.jpeg","pics/en21.jpeg","pics/en22.jpeg","pics/en23.jpeg","pics/en24.jpeg","pics/en25.jpeg","pics/en26.jpeg","pics/en27.jpeg","pics/en28.jpeg",],
+    images: ["pics/en30.jpeg","pics/en17.jpeg","pics/enn1.jpeg","pics/enn4.jpeg","pics/en1.jpeg","pics/en2.jpeg","pics/en11.jpeg","pics/en12.jpeg","pics/en13.jpeg","pics/en14.jpeg","pics/en15.jpeg","pics/en16.jpeg","pics/en18.jpeg","pics/en19.jpeg","pics/en20.jpeg","pics/en21.jpeg","pics/en22.jpeg","pics/en23.jpeg","pics/en24.jpeg","pics/en25.jpeg","pics/en26.jpeg","pics/en27.jpeg","pics/en28.jpeg",],
     captions: [
       { text: "Aravali Clean-Up", tag: "Environment" },
       { text: "Tree Plantation", tag: "Environment" },
