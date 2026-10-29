@@ -34,7 +34,7 @@ const translations = {
       explore: 'Explore Our Work',
       ourFounder: 'Our Legacy',
     },
-    marquee: ['Healthcare', 'Education', 'Library', 'Environment', 'Jeevdaya', 'Social Welfare'],
+    marquee: ['Healthcare', 'Education', 'School Adoption', 'Environment', 'Jeevdaya', 'Social Welfare'],
     stats: { years: 'Years of Service', projects: 'Active Projects', lives: 'Lives Impacted', pillars: 'Core Pillars' },
     about: {
       history: 'Our History',
@@ -88,7 +88,7 @@ const translations = {
         { title: 'Education Initiative', desc: 'Began distribution of school kits, funded fees for children in financial need, and supported schools.' },
         { title: 'Environment Wing', desc: 'Launched the Aravali cleaning drive and annual tree plantation campaigns.' },
         { title: 'Animal Welfare (Jeevdaya)', desc: 'Renovated the Pashu hospital and began organizing regular Pashu Chikitsa camps.' },
-        { title: 'Six Pillars Strong', desc: 'Now operating across healthcare, education, library, environment, animal welfare, and social support.' },
+        { title: 'Six Pillars Strong', desc: 'Now operating across healthcare, education, school adoption, environment, animal welfare, and social support.' },
       ],
     },
     gallery: {
@@ -134,10 +134,6 @@ const translations = {
     },
     footer: {
       marqueeItems: ['Compassion in Practice', 'Serving since 2003', 'Jeevdaya · Healthcare · Education', 'Aravali · Community · Knowledge'],
-      newsletterHeading: 'Stay connected with our work.',
-      newsletterDesc: 'Receive updates on new initiatives, camps, and drives.',
-      newsletterPlaceholder: 'your@email.com',
-      subscribe: 'Subscribe',
       brandDesc: 'A legacy built on compassion. Established in 2003 with a vision to serve society across healthcare, education, environment, animal welfare, and community upliftment.',
       exploreTitle: 'Explore',
       exploreLinks: ['About', 'Legacy', 'Journey', 'Initiatives', 'Impact'],
@@ -152,6 +148,7 @@ const translations = {
       message: 'Message',
       messagePlaceholder: 'How can we help?',
       send: 'Send Message',
+      sent: 'Message Sent Successfully!',
       privacy: 'Privacy',
       terms: 'Terms',
       tagline: 'Compassion in Practice.',
@@ -172,7 +169,7 @@ const translations = {
       explore: 'हमारा काम देखें',
       ourFounder: 'हमारी विरासत',
     },
-    marquee: ['स्वास्थ्य सेवा', 'शिक्षा', 'पुस्तकालय', 'पर्यावरण', 'जीवदया', 'सामाजिक कल्याण'],
+    marquee: ['स्वास्थ्य सेवा', 'शिक्षा', 'स्कूल गोद लेना', 'पर्यावरण', 'जीवदया', 'सामाजिक कल्याण'],
     stats: { years: 'सेवा के वर्ष', projects: 'सक्रिय परियोजनाएं', lives: 'प्रभावित जीवन', pillars: 'मुख्य स्तंभ' },
     about: {
       history: 'हमारा इतिहास',
@@ -226,7 +223,7 @@ const translations = {
         { title: 'शिक्षा पहल', desc: 'स्कूल किट वितरित करना शुरू किया, आर्थिक जरूरत वाले बच्चों की फीस का भुगतान किया।' },
         { title: 'पर्यावरण विंग', desc: 'अरावली सफाई अभियान और वार्षिक वृक्षारोपण अभियान शुरू किए।' },
         { title: 'पशु कल्याण (जीवदया)', desc: 'पशु अस्पताल का जीर्णोद्धार किया और नियमित पशु चिकित्सा शिविर आयोजित करना शुरू किया।' },
-        { title: 'छह स्तंभ मजबूत', desc: 'अब स्वास्थ्य, शिक्षा, पुस्तकालय, पर्यावरण, पशु कल्याण और सामाजिक सहायता में कार्यरत।' },
+        { title: 'छह स्तंभ मजबूत', desc: 'अब स्वास्थ्य, शिक्षा, स्कूल गोद लेना, पर्यावरण, पशु कल्याण और सामाजिक सहायता में कार्यरत।' },
       ],
     },
     gallery: {
@@ -272,10 +269,6 @@ const translations = {
     },
     footer: {
       marqueeItems: ['व्यवहार में करुणा', '2003 से सेवा में', 'जीवदया · स्वास्थ्य · शिक्षा', 'अरावली · समुदाय · ज्ञान'],
-      newsletterHeading: 'हमारे काम से जुड़े रहें।',
-      newsletterDesc: 'नई पहलों, शिविरों और अभियानों पर अपडेट प्राप्त करें।',
-      newsletterPlaceholder: 'आपका@ईमेल.com',
-      subscribe: 'सदस्यता लें',
       brandDesc: 'करुणा पर आधारित एक विरासत। 2003 में स्थापित, स्वास्थ्य, शिक्षा, पर्यावरण, पशु कल्याण और सामुदायिक उत्थान में समाज की सेवा के दृष्टिकोण के साथ।',
       exploreTitle: 'अन्वेषण करें',
       exploreLinks: ['हमारे बारे में', 'विरासत', 'यात्रा', 'पहलें', 'प्रभाव'],
@@ -290,6 +283,7 @@ const translations = {
       message: 'संदेश',
       messagePlaceholder: 'हम कैसे मदद कर सकते हैं?',
       send: 'संदेश भेजें',
+      sent: 'संदेश सफलतापूर्वक भेजा गया!',
       privacy: 'गोपनीयता',
       terms: 'शर्तें',
       tagline: 'व्यवहार में करुणा।',
@@ -312,7 +306,6 @@ const trustInfo = {
   phone: "+91 22 2801 XXXX",
 };
 
-// The image shown is of Shri Narendra Punamiya — the Founder
 const founderData = {
   name: "Late Shri Narendra Mulchand Punamiya",
   img: "/pics/late.png",
@@ -407,34 +400,36 @@ const projectsData = [
     ],
   },
   {
-    id: 'library',
-    title: 'Library & Knowledge',
-    titleHi: 'पुस्तकालय और ज्ञान',
-    shortDesc: 'Running community libraries with free access to diverse reading materials.',
-    shortDescHi: 'विविध पठन सामग्री तक मुफ्त पहुंच के साथ समुदाय पुस्तकालय चलाना।',
+    id: 'school-adoption',
+    title: 'School Adoption',
+    titleHi: 'स्कूल गोद लेना',
+    shortDesc: 'Adopting under-resourced schools to provide quality education, infrastructure, and holistic development.',
+    shortDescHi: 'गुणवत्तापूर्ण शिक्षा, बुनियादी ढांचे और समग्र विकास के लिए कम संसाधन वाले स्कूलों को गोद लेना।',
     icon: (props) => <svg {...props} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>,
     details: [
-      "Establishment, maintenance, and running of community libraries.",
-      "Providing free access to books, reading material, and study resources.",
-      "Running awareness programs to promote literacy and reading culture.",
-      "Supporting digital learning systems and educational tools."
+      "Adopting and managing the operations of under-resourced schools.",
+      "Providing infrastructure support including classrooms, furniture, and learning materials.",
+      "Funding teacher salaries and professional training programs.",
+      "Ensuring holistic development through extracurricular activities and sports."
     ],
     detailsHi: [
-      "समुदाय पुस्तकालयों की स्थापना, रखरखाव और संचालन।",
-      "किताबों, पठन सामग्री और अध्ययन संसाधनों तक मुफ्त पहुंच।",
-      "साक्षरता और पठन संस्कृति को बढ़ावा देने के लिए जागरूकता कार्यक्रम चलाना।",
-      "डिजिटल शिक्षण प्रणालियों और शैक्षिक उपकरणों का समर्थन।"
+      "कम संसाधन वाले स्कूलों के संचालन को गोद लेना और प्रबंधित करना।",
+      "कक्षाओं, फर्नीचर और शिक्षण सामग्री सहित बुनियादी ढांचे का समर्थन प्रदान करना।",
+      "शिक्षकों के वेतन और व्यावसायिक प्रशिक्षण कार्यक्रमों को वित्त पोषित करना।",
+      "पाठ्येतर गतिविधियों और खेलों के माध्यम से समग्र विकास सुनिश्चित करना।"
     ],
-    images: ["pics/library1.jpeg","pics/library2.jpeg","pics/library3.jpeg"],
+    images: ["pics/sc3.jpeg","pics/sc1.jpeg","pics/sc2.jpeg","pics/sc4.jpeg","pics/sc6.jpeg","pics/sc7.jpeg","pics/sc8.jpeg","pics/sc9.jpeg","pics/sc10.jpeg","pics/sc11.jpeg","pics/sc12.jpeg","pics/sc13.jpeg","pics/sc14.jpeg","pics/sc15.jpeg","pics/sc16.jpeg","pics/sc17.jpeg","pics/sc18.jpeg","pics/sc19.jpeg","pics/sc20.jpeg","pics/sc21.jpeg","pics/sc22.jpeg","pics/sc23.jpeg","pics/sc24.jpeg","pics/sc25.jpeg",],
     captions: [
-      { text: "Community Library", tag: "Library" },
-      { text: "Reading Program", tag: "Library" },
-      { text: "Digital Learning", tag: "Library" },
+      { text: "School Adoption", tag: "Education" },
+      { text: "Infrastructure Support", tag: "Education" },
+      { text: "Teacher Training", tag: "Education" },
+      { text: "Holistic Development", tag: "Education" },
     ],
     captionsHi: [
-      { text: "समुदाय पुस्तकालय", tag: "पुस्तकालय" },
-      { text: "पठन कार्यक्रम", tag: "पुस्तकालय" },
-      { text: "डिजिटल शिक्षा", tag: "पुस्तकालय" },
+      { text: "स्कूल गोद लेना", tag: "शिक्षा" },
+      { text: "बुनियादी ढांचे का समर्थन", tag: "शिक्षा" },
+      { text: "शिक्षक प्रशिक्षण", tag: "शिक्षा" },
+      { text: "समग्र विकास", tag: "शिक्षा" },
     ],
   },
   {
@@ -541,8 +536,8 @@ const homeGalleryImages = [
   { src: "pics/edu2.jpeg",       en: { text: "School Kits",              tag: "Education" },   hi: { text: "स्कूल किट",              tag: "शिक्षा" } },
   { src: "pics/class1.jpeg",     en: { text: "Classroom Support",        tag: "Education" },   hi: { text: "कक्षा सहायता",           tag: "शिक्षा" } },
   { src: "pics/sports2.jpeg",    en: { text: "Extracurricular Activities", tag: "Education" }, hi: { text: "पाठ्येतर गतिविधियाँ",     tag: "शिक्षा" } },
-  { src: "pics/library1.jpeg",   en: { text: "Community Library",        tag: "Library" },     hi: { text: "समुदाय पुस्तकालय",        tag: "पुस्तकालय" } },
-  { src: "pics/library2.jpeg",   en: { text: "Reading Program",          tag: "Library" },     hi: { text: "पठन कार्यक्रम",          tag: "पुस्तकालय" } },
+  { src: "pics/edu3.jpeg",       en: { text: "School Adoption",          tag: "Education" },   hi: { text: "स्कूल गोद लेना",          tag: "शिक्षा" } },
+  { src: "pics/edu4.jpeg",       en: { text: "Infrastructure Support",   tag: "Education" },   hi: { text: "बुनियादी ढांचा",          tag: "शिक्षा" } },
   { src: "pics/enn1.jpeg",       en: { text: "Tree Plantation",          tag: "Environment" }, hi: { text: "वृक्षारोपण",              tag: "पर्यावरण" } },
   { src: "pics/enn2.jpeg",       en: { text: "Aravali Clean-Up",         tag: "Environment" }, hi: { text: "अरावली सफाई",            tag: "पर्यावरण" } },
   { src: "pics/animal1.jpeg",    en: { text: "Pashu Hospital",           tag: "Jeevdaya" },    hi: { text: "पशु अस्पताल",            tag: "जीवदया" } },
@@ -564,8 +559,6 @@ const heroImages = [
   "pics/hom4.jpeg",
   "pics/hom8.jpeg",
   "pics/hom11.jpeg"
-
-
 ];
 
 const localizeProject = (p, isHindi) => isHindi ? {
@@ -1199,9 +1192,7 @@ const TrusteesSection = () => {
   );
 };
 
-// ====================================================================
-// REDESIGNED LEGACY SECTION — SIMPLE, ELEGANT, STORY-DRIVEN
-// ====================================================================
+// --- REDESIGNED LEGACY SECTION ---
 const FounderSpotlight = () => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
@@ -1238,8 +1229,6 @@ const FounderSpotlight = () => {
 
   return (
     <section ref={ref} id="founder" className="relative py-24 md:py-32 bg-[#1A362D] overflow-hidden">
-
-      {/* Background typography */}
       <motion.div
         style={isMobile ? {} : { x: bgTextX }}
         className="absolute top-1/4 -left-1/4 pointer-events-none whitespace-nowrap opacity-[0.03]"
@@ -1247,16 +1236,11 @@ const FounderSpotlight = () => {
         <span className="text-[16vw] font-serif italic text-[#C28C54] leading-none">A Legacy of Compassion</span>
       </motion.div>
 
-      {/* Top / bottom ornamental borders */}
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/50 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/50 to-transparent" />
-
-      {/* Radial glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-[#C28C54]/[0.05] blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
-
-        {/* ============ HEADER ============ */}
         <FadeIn>
           <div className="text-center mb-16 md:mb-20">
             <div className="flex items-center justify-center gap-4 mb-6">
@@ -1275,28 +1259,22 @@ const FounderSpotlight = () => {
           </div>
         </FadeIn>
 
-        {/* ============ PORTRAIT + STORY ============ */}
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center mb-24 md:mb-32">
-
-          {/* Portrait of Narendra (the Founder) */}
           <motion.div style={isMobile ? {} : { y: imgY }} className="lg:col-span-5 flex justify-center relative">
             <FadeIn direction="right">
               <div className="relative">
-                {/* Rotating outer ring */}
                 <motion.div
                   className="absolute -inset-8 rounded-full border border-[#C28C54]/25"
                   animate={{ rotate: 360 }}
                   transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
                   style={{ borderStyle: 'dashed' }}
                 />
-                {/* Rotating inner ring */}
                 <motion.div
                   className="absolute -inset-12 rounded-full border border-[#C28C54]/10"
                   animate={{ rotate: -360 }}
                   transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
                   style={{ borderStyle: 'dotted' }}
                 />
-                {/* Orbiting gold dot */}
                 <motion.div
                   className="absolute -inset-8 rounded-full"
                   animate={{ rotate: 360 }}
@@ -1304,7 +1282,6 @@ const FounderSpotlight = () => {
                 >
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full bg-[#C28C54] shadow-[0_0_20px_rgba(194,140,84,1)]" />
                 </motion.div>
-                {/* Second orbiting dot */}
                 <motion.div
                   className="absolute -inset-12 rounded-full"
                   animate={{ rotate: -360 }}
@@ -1313,7 +1290,6 @@ const FounderSpotlight = () => {
                   <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-1.5 h-1.5 rounded-full bg-[#C28C54]/70 shadow-[0_0_12px_rgba(194,140,84,0.7)]" />
                 </motion.div>
 
-                {/* Portrait */}
                 <motion.div
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -1327,7 +1303,6 @@ const FounderSpotlight = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1A362D]/70 via-transparent to-transparent" />
                 </motion.div>
 
-                {/* Floating "Founder" badge */}
                 <motion.div
                   animate={{ y: [0, -8, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -1343,7 +1318,6 @@ const FounderSpotlight = () => {
             </FadeIn>
           </motion.div>
 
-          {/* Story */}
           <div className="lg:col-span-7 text-white">
             <FadeIn delay={100}>
               <p className={`${theme.accentText} uppercase tracking-[0.3em] text-xs font-bold mb-4`}>
@@ -1357,7 +1331,6 @@ const FounderSpotlight = () => {
               </p>
             </FadeIn>
 
-            {/* Quote */}
             <FadeIn delay={200}>
               <div className="relative pl-6 md:pl-8 border-l-2 border-[#C28C54]/60 mb-8">
                 <svg className="absolute -top-3 -left-3 w-8 h-8 text-[#C28C54]/25" fill="currentColor" viewBox="0 0 24 24">
@@ -1369,7 +1342,6 @@ const FounderSpotlight = () => {
               </div>
             </FadeIn>
 
-            {/* Signature row */}
             <FadeIn delay={300}>
               <div className="flex items-center gap-6">
                 <div>
@@ -1386,7 +1358,6 @@ const FounderSpotlight = () => {
           </div>
         </div>
 
-        {/* ============ LINEAGE — 3 GENERATIONS ============ */}
         <FadeIn>
           <div className="text-center mb-10 md:mb-14">
             <span className="inline-block px-6 py-2 rounded-full border border-[#C28C54]/30 text-[#C28C54] text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold">
@@ -1395,16 +1366,12 @@ const FounderSpotlight = () => {
           </div>
         </FadeIn>
 
-        {/* Desktop: horizontal chain */}
         <div className="hidden md:block relative">
-          {/* Connecting line */}
           <div className="absolute top-1/2 left-[10%] right-[10%] -translate-y-1/2 h-[1px] bg-gradient-to-r from-transparent via-[#C28C54]/50 to-transparent" />
-
           <div className="grid grid-cols-3 gap-6 relative">
             {lineage.map((item, idx) => (
               <FadeIn key={idx} delay={idx * 150}>
                 <div className="relative group h-full">
-                  {/* Node dot */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                     <motion.div
                       animate={{ scale: [1, 1.5, 1], opacity: [1, 0.6, 1] }}
@@ -1412,7 +1379,6 @@ const FounderSpotlight = () => {
                       className={`w-3.5 h-3.5 rounded-full ${item.highlight ? 'bg-[#C28C54] shadow-[0_0_25px_rgba(194,140,84,1)]' : 'bg-[#C28C54]/60 shadow-[0_0_12px_rgba(194,140,84,0.6)]'}`}
                     />
                   </div>
-
                   <div className={`relative bg-gradient-to-br from-white/[0.07] to-white/[0.02] border ${item.highlight ? 'border-[#C28C54]/50' : 'border-white/10'} rounded-2xl p-6 pt-10 hover:border-[#C28C54]/60 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)]`}>
                     <div className="text-center mb-3">
                       <span className="text-[9px] font-bold tracking-[0.3em] uppercase text-[#C28C54]/60">
@@ -1428,7 +1394,6 @@ const FounderSpotlight = () => {
                     <p className="text-white/60 text-sm leading-relaxed text-center">
                       {item.desc}
                     </p>
-
                     {item.highlight && (
                       <div className="absolute -top-2 left-1/2 -translate-x-1/2 px-3 py-1 bg-[#C28C54] text-[#1A362D] text-[9px] font-bold uppercase tracking-widest rounded-full shadow-lg">
                         Founder
@@ -1441,10 +1406,8 @@ const FounderSpotlight = () => {
           </div>
         </div>
 
-        {/* Mobile: vertical chain */}
         <div className="md:hidden relative">
           <div className="absolute left-4 top-4 bottom-4 w-[1px] bg-gradient-to-b from-transparent via-[#C28C54]/40 to-transparent" />
-
           <div className="space-y-5">
             {lineage.map((item, idx) => (
               <FadeIn key={idx} delay={idx * 100}>
@@ -1454,7 +1417,6 @@ const FounderSpotlight = () => {
                     transition={{ duration: 2.5, repeat: Infinity, delay: idx * 0.5 }}
                     className={`absolute left-[10px] top-6 w-3 h-3 rounded-full ${item.highlight ? 'bg-[#C28C54] shadow-[0_0_20px_rgba(194,140,84,1)]' : 'bg-[#C28C54]/60'} z-10`}
                   />
-
                   <div className={`relative bg-gradient-to-br from-white/[0.07] to-white/[0.02] border ${item.highlight ? 'border-[#C28C54]/50' : 'border-white/10'} rounded-2xl p-5`}>
                     {item.highlight && (
                       <div className="absolute -top-2 right-4 px-2.5 py-0.5 bg-[#C28C54] text-[#1A362D] text-[8px] font-bold uppercase tracking-widest rounded-full shadow-lg">
@@ -1503,7 +1465,6 @@ const JourneyTimeline = () => {
 
         <div className="relative">
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-[#C28C54]/40 to-transparent -translate-x-1/2" />
-
           {milestones.map((m, i) => {
             const isLeft = i % 2 === 0;
             return (
@@ -1525,7 +1486,6 @@ const JourneyTimeline = () => {
                     <p className="text-[#1A362D]/70 leading-relaxed">{m.desc}</p>
                   </div>
                 </div>
-
                 <motion.div
                   whileHover={{ scale: 1.5 }}
                   className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 md:w-5 md:h-5 rounded-full bg-[#C28C54] border-4 border-[#F7F5F0] shadow-lg z-10"
@@ -1619,15 +1579,12 @@ const HomeMasonryGallery = ({ onImageClick }) => {
                     className="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-[900ms] ease-out"
                   />
                 </div>
-
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1A362D]/95 via-[#1A362D]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-
                 <div className="absolute top-3 right-3 z-30 opacity-0 group-hover:opacity-100 transform -translate-y-2 group-hover:translate-y-0 transition-all duration-500">
                   <span className="bg-[#C28C54] text-[#1A362D] text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
                     {item.tag}
                   </span>
                 </div>
-
                 <div className="absolute bottom-0 left-0 right-0 p-4 z-30 transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <p className="text-white font-serif text-lg leading-tight">{item.caption}</p>
                   <div className="flex items-center gap-2 mt-2 text-[#C28C54] text-[10px] font-bold uppercase tracking-widest">
@@ -1637,7 +1594,6 @@ const HomeMasonryGallery = ({ onImageClick }) => {
                     {t.gallery.view}
                   </div>
                 </div>
-
                 <div className="absolute top-3 left-3 z-30 group-hover:opacity-0 transition-opacity duration-300">
                   <span className="bg-[#1A362D]/70 backdrop-blur-sm text-white/90 text-[10px] font-bold px-2 py-1 rounded">
                     {String(idx + 1).padStart(2, '0')}
@@ -1658,10 +1614,11 @@ const HorizontalProjects = ({ onImageClick, setCurrentView }) => {
   const t = isHindi ? translations.hi : translations.en;
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start start", "end end"] });
-  const x = useTransform(scrollYProgress, [0, 1], ["0vw", "-220vw"]);
+  
+  const x = useTransform(scrollYProgress, [0, 1], ["0vw", "-170vw"]);
 
   return (
-    <section ref={containerRef} id="projects" className="relative h-[500vh] bg-[#1A362D] hidden md:block">
+    <section ref={containerRef} id="projects" className="relative h-[350vh] bg-[#1A362D] hidden md:block">
       <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-10 w-full">
           <motion.span initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
@@ -1955,13 +1912,29 @@ const ProjectDetailView = ({ project: rawProject, setCurrentView, onImageClick }
 };
 
 // --- FULL FOOTER ---
-const FullFooter = () => {
+const FullFooter = ({ setCurrentView }) => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
   const year = new Date().getFullYear();
+  const [submitStatus, setSubmitStatus] = useState('');
+
+  const handleContactSubmit = (e) => {
+    e.preventDefault();
+    setSubmitStatus('sent');
+    e.target.reset();
+    setTimeout(() => setSubmitStatus(''), 4000);
+  };
+
+  const handleNavClick = (id) => {
+    if (setCurrentView) setCurrentView('home');
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
 
   return (
-    <footer id="connect" className="relative bg-[#1A362D] text-[#F7F5F0] overflow-hidden">
+    <footer className="relative bg-[#1A362D] text-[#F7F5F0] overflow-hidden">
       <div className="border-b border-white/10">
         <MarqueeBanner
           items={t.footer.marqueeItems}
@@ -1977,24 +1950,6 @@ const FullFooter = () => {
         animate={{ y: [0, -30, 0], scale: [1, 1.15, 1] }} transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }} />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-16">
-        <FadeIn>
-          <div className="grid md:grid-cols-2 gap-10 items-center p-8 md:p-12 rounded-3xl bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/10 backdrop-blur-sm">
-            <div>
-              <h3 className="text-3xl md:text-4xl font-serif mb-3">{t.footer.newsletterHeading}</h3>
-              <p className="text-white/60 text-lg">{t.footer.newsletterDesc}</p>
-            </div>
-            <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => e.preventDefault()}>
-              <input type="email" placeholder={t.footer.newsletterPlaceholder}
-                className="flex-1 bg-white/5 border border-white/20 rounded-xl px-5 py-4 text-white placeholder:text-white/40 focus:outline-none focus:border-[#C28C54] transition-colors" />
-              <MagneticButton className="bg-[#C28C54] text-[#1A362D] hover:bg-[#E0A96D] px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-sm transition-colors whitespace-nowrap">
-                {t.footer.subscribe}
-              </MagneticButton>
-            </form>
-          </div>
-        </FadeIn>
-      </div>
-
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 pb-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
           <div className="lg:col-span-4">
             <FadeIn>
@@ -2036,10 +1991,7 @@ const FullFooter = () => {
                   { label: t.footer.exploreLinks[4], id: 'difference' },
                 ].map((link) => (
                   <li key={link.id}>
-                    <button onClick={() => {
-                      const el = document.getElementById(link.id);
-                      if (el) el.scrollIntoView({ behavior: 'smooth' });
-                    }} className="hover:text-[#C28C54] transition-colors">
+                    <button onClick={() => handleNavClick(link.id)} className="hover:text-[#C28C54] transition-colors">
                       {link.label}
                     </button>
                   </li>
@@ -2084,7 +2036,8 @@ const FullFooter = () => {
         </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 pb-20">
+      {/* Contact Form Section - Connected to Navbar */}
+      <div id="connect" className="relative max-w-7xl mx-auto px-6 lg:px-12 pb-20">
         <FadeIn>
           <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-8 md:p-12 grid lg:grid-cols-5 gap-10">
             <div className="lg:col-span-2">
@@ -2093,26 +2046,31 @@ const FullFooter = () => {
                 {t.footer.contactDesc}
               </p>
             </div>
-            <form className="lg:col-span-3 grid sm:grid-cols-2 gap-5" onSubmit={(e) => e.preventDefault()}>
+            <form className="lg:col-span-3 grid sm:grid-cols-2 gap-5" onSubmit={handleContactSubmit}>
               <div className="sm:col-span-1">
                 <label className="block text-[10px] font-bold uppercase tracking-widest text-[#C28C54] mb-2">{t.footer.name}</label>
-                <input type="text" placeholder={t.footer.namePlaceholder}
+                <input type="text" required placeholder={t.footer.namePlaceholder}
                   className="w-full bg-transparent border-b-2 border-white/10 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#C28C54] transition-colors" />
               </div>
               <div className="sm:col-span-1">
                 <label className="block text-[10px] font-bold uppercase tracking-widest text-[#C28C54] mb-2">{t.footer.email}</label>
-                <input type="email" placeholder={t.footer.emailPlaceholder}
+                <input type="email" required placeholder={t.footer.emailPlaceholder}
                   className="w-full bg-transparent border-b-2 border-white/10 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#C28C54] transition-colors" />
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-[10px] font-bold uppercase tracking-widest text-[#C28C54] mb-2">{t.footer.message}</label>
-                <textarea rows="3" placeholder={t.footer.messagePlaceholder}
+                <textarea rows="3" required placeholder={t.footer.messagePlaceholder}
                   className="w-full bg-transparent border-b-2 border-white/10 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-[#C28C54] transition-colors resize-none" />
               </div>
-              <div className="sm:col-span-2">
-                <MagneticButton className="w-full sm:w-auto bg-[#C28C54] text-[#1A362D] hover:bg-[#E0A96D] px-10 py-4 rounded-xl font-bold uppercase tracking-widest text-sm transition-colors">
+              <div className="sm:col-span-2 flex items-center justify-between">
+                <MagneticButton type="submit" className="w-full sm:w-auto bg-[#C28C54] text-[#1A362D] hover:bg-[#E0A96D] px-10 py-4 rounded-xl font-bold uppercase tracking-widest text-sm transition-colors">
                   {t.footer.send}
                 </MagneticButton>
+                {submitStatus === 'sent' && (
+                  <motion.span initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} className="text-green-400 text-sm font-semibold ml-4">
+                    {t.footer.sent}
+                  </motion.span>
+                )}
               </div>
             </form>
           </div>
@@ -2178,18 +2136,18 @@ export default function App() {
       return (
         <>
           <HomeView setCurrentView={setCurrentView} onImageClick={setSelectedImage} />
-          <FullFooter />
+          <FullFooter setCurrentView={setCurrentView} />
         </>
       );
     }
     if (currentView.startsWith('project-')) {
-      const projectId = currentView.split('-')[1];
+      const projectId = currentView.replace('project-', '');
       const project = projectsData.find(p => p.id === projectId);
       if (project) {
         return (
           <>
             <ProjectDetailView project={project} setCurrentView={setCurrentView} onImageClick={setSelectedImage} />
-            <FullFooter />
+            <FullFooter setCurrentView={setCurrentView} />
           </>
         );
       }
@@ -2197,7 +2155,7 @@ export default function App() {
     return (
       <>
         <HomeView setCurrentView={setCurrentView} onImageClick={setSelectedImage} />
-        <FullFooter />
+        <FullFooter setCurrentView={setCurrentView} />
       </>
     );
   };
