@@ -418,7 +418,7 @@ const projectsData = [
       "शिक्षकों के वेतन और व्यावसायिक प्रशिक्षण कार्यक्रमों को वित्त पोषित करना।",
       "पाठ्येतर गतिविधियों और खेलों के माध्यम से समग्र विकास सुनिश्चित करना।"
     ],
-    images: ["pics/sc3.jpeg","pics/sc1.jpeg","pics/sc2.jpeg","pics/sc4.jpeg","pics/sc6.jpeg","pics/sc7.jpeg","pics/sc8.jpeg","pics/sc9.jpeg","pics/sc10.jpeg","pics/sc11.jpeg","pics/sc12.jpeg","pics/sc13.jpeg","pics/sc14.jpeg","pics/sc15.jpeg","pics/sc16.jpeg","pics/sc17.jpeg","pics/sc18.jpeg","pics/sc19.jpeg","pics/sc20.jpeg","pics/sc21.jpeg","pics/sc22.jpeg","pics/sc23.jpeg","pics/sc24.jpeg","pics/sc25.jpeg",],
+    images: ["pics/sc3.jpeg","pics/sc1.jpeg","pics/sc2.jpeg","pics/sc4.jpeg","pics/sc6.jpeg","pics/sc7.jpeg","pics/sc8.jpeg","pics/sc9.jpeg","pics/sc10.jpeg","pics/sc11.jpeg","pics/sc12.jpeg","pics/sc13.jpeg","pics/sc14.jpeg","pics/sc15.jpeg","pics/sc16.jpeg","pics/sc17.jpeg","pics/sc18.jpeg","pics/sc19.jpeg","pics/sc20.jpeg","pics/sc40.jpeg","pics/sc22.jpeg","pics/sc23.jpeg","pics/sc24.jpeg","pics/sc25.jpeg",],
     captions: [
       { text: "School Adoption", tag: "Education" },
       { text: "Infrastructure Support", tag: "Education" },
@@ -482,7 +482,7 @@ const projectsData = [
       "ग्रामीण पशुओं के लिए पशु चिकित्सा शिविर आयोजित करना।",
       "ग्रामीण जीवन को बनाए रखने वाले जानवरों की देखभाल की व्यावहारिक अभिव्यक्ति।"
     ],
-    images: ["pics/animal1.jpeg","pics/animal2.jpeg","pics/animal3.jpeg"],
+    images: ["pics/an1.jpeg","pics/animal2.jpeg","pics/animal3.jpeg"],
     captions: [
       { text: "Pashu Hospital", tag: "Jeevdaya" },
       { text: "Chara Vitaran", tag: "Jeevdaya" },
@@ -1756,67 +1756,405 @@ const ParallaxDifferenceSection = () => {
 };
 
 // --- TESTIMONIALS ---
+
+
+
 const TestimonialsSection = () => {
   const { isHindi } = useLang();
   const t = isHindi ? translations.hi : translations.en;
-  const [idx, setIdx] = useState(0);
-  const quotes = t.testimonials.quotes;
 
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const videos = [
+    {
+      title: isHindi ? "अधिवक्ता संजय बोहरा" : "Advocate Sanjay Bohra",
+      category: isHindi ? "समुदाय की आवाज़" : "Community Voice",
+      url: "https://res.cloudinary.com/dgiktxjvl/video/upload/v1793439999/advocate_sanjaybohra_sviw43.mp4",
+      poster: "https://res.cloudinary.com/dgiktxjvl/video/upload/so_1,w_700,h_1100,c_fill,g_auto,q_auto,f_jpg/v1793439999/advocate_sanjaybohra_sviw43.jpg",
+    },
+    {
+      title: isHindi ? "डॉ. परीक्षित राजपुरोहित" : "Dr. Parikshit Rajpurohit",
+      category: isHindi ? "पशु कल्याण" : "Animal Welfare",
+      url: "https://res.cloudinary.com/dgiktxjvl/video/upload/v1793440014/pashu_hospital_kxd7fk.mp4",
+      poster: "https://res.cloudinary.com/dgiktxjvl/video/upload/so_1,w_700,h_1100,c_fill,g_auto,q_auto,f_jpg/v1793440014/pashu_hospital_kxd7fk.jpg",
+    },
+    {
+      title: isHindi ? "अधिवक्ता संजय बोहरा" : "Advocate Sanjay Bohra",
+      category: isHindi ? "सर्वांगीण विकास" : "Holistic Development",
+      url: "https://res.cloudinary.com/dgiktxjvl/video/upload/v1793440012/school_s0hd8o.mp4",
+      poster: "https://res.cloudinary.com/dgiktxjvl/video/upload/so_1,w_700,h_1100,c_fill,g_auto,f_jpg/v1793440012/school_s0hd8o.jpg",
+    },
+    {
+      title: isHindi ? "डॉ. राजेंद्र पुनमिया" : "Dr. Rajendra Punamiya",
+      category: isHindi ? "स्वास्थ्य सेवा" : "Healthcare",
+      url: "https://res.cloudinary.com/dgiktxjvl/video/upload/v1793440008/hospital_ml34pg.mp4",
+      poster: "https://res.cloudinary.com/dgiktxjvl/video/upload/so_1,w_700,h_1100,c_fill,g_auto,q_auto,f_jpg/v1793440008/hospital_ml34pg.jpg",
+    },
+    {
+      title: isHindi ? "श्री विजय सिंह माली" : "Mr. Vijay Singh Mali",
+      category: isHindi ? "शिक्षा" : "Education",
+      url: "https://res.cloudinary.com/dgiktxjvl/video/upload/v1793440010/education_wpqwcp.mp4",
+      poster: "https://res.cloudinary.com/dgiktxjvl/video/upload/so_1,w_700,h_1100,c_fill,g_auto,q_auto,f_jpg/v1793440010/education_wpqwcp.jpg",
+    },
+  ];
+
+  const nextIndex = (activeIndex + 1) % videos.length;
+  const previousIndex = (activeIndex - 1 + videos.length) % videos.length;
+
+  const nextVideo = () => {
+    setActiveIndex((current) => (current + 1) % videos.length);
+  };
+
+  const previousVideo = () => {
+    setActiveIndex((current) => (current - 1 + videos.length) % videos.length);
+  };
+
+  // Automatic sliding
   useEffect(() => {
-    const timer = setInterval(() => setIdx((p) => (p + 1) % quotes.length), 6000);
-    return () => clearInterval(timer);
-  }, [quotes.length]);
+    if (selectedVideo || isHovered) return;
 
-  useEffect(() => { setIdx(0); }, [isHindi]);
+    const timer = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % videos.length);
+    }, 6000);
+
+    return () => clearInterval(timer);
+  }, [selectedVideo, isHovered]);
+
+  // Video popup controls
+  useEffect(() => {
+    if (!selectedVideo) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const handleEscape = (e) => {
+      if (e.key === "Escape") setSelectedVideo(null);
+    };
+
+    window.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", handleEscape);
+    };
+  }, [selectedVideo]);
+
+  // Side video cards
+  const renderSideCard = (video, side, index) => (
+    <motion.button
+      key={video.url}
+      type="button"
+      onClick={() => setActiveIndex(index)}
+      initial={{ opacity: 0, x: side === "left" ? -35 : 35 }}
+      animate={{
+        opacity: 1,
+        x: 0,
+        rotate: side === "left" ? -4 : 4,
+        y: [0, -6, 0],
+      }}
+      transition={{
+        opacity: { duration: 0.5 },
+        x: { duration: 0.6 },
+        rotate: { duration: 0.6 },
+        y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+      }}
+      whileHover={{
+        scale: 1.04,
+        rotate: 0,
+        y: -5,
+      }}
+      className={`absolute top-1/2 -translate-y-1/2 hidden md:block w-[23%] max-w-[280px] h-[470px] lg:h-[520px] rounded-2xl overflow-hidden shadow-2xl border border-white/50 cursor-pointer ${
+        side === "left" ? "left-[3%]" : "right-[3%]"
+      }`}
+      style={{ zIndex: 10 }}
+    >
+      <img
+        src={video.poster}
+        alt={video.title}
+        className="w-full h-full object-cover transition-transform duration-700"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-t from-[#10251F]/95 via-[#10251F]/35 to-black/10" />
+
+      <div className="absolute inset-0 flex flex-col justify-end items-start p-5 text-left">
+        <span className="text-[10px] uppercase tracking-[0.2em] text-[#E0A96D] font-bold">
+          {video.category}
+        </span>
+
+        <h3 className="text-white font-serif text-lg mt-2">
+          {video.title}
+        </h3>
+
+        <span className="text-white/65 text-[10px] uppercase tracking-widest mt-3">
+          {isHindi ? "देखें" : "Explore story"} →
+        </span>
+      </div>
+    </motion.button>
+  );
 
   return (
-    <section className={`py-24 md:py-32 ${theme.bgBase} relative overflow-hidden`}>
-      <div className="hidden md:block absolute top-12 left-1/2 -translate-x-1/2 text-[24rem] font-serif text-[#C28C54]/5 leading-none pointer-events-none select-none">
-        &quot;
+    <section
+      id="testimonials"
+      className={`relative pt-36 md:pt-40 pb-24 md:pb-32 ${theme.bgBase} overflow-hidden`}
+    >
+
+      {/* Background decoration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full bg-[#C28C54]/10 blur-[110px]" />
+
+        <div className="absolute top-1/2 -left-40 w-[350px] h-[350px] rounded-full bg-[#1A362D]/5 blur-[100px]" />
+
+        <div className="absolute bottom-0 right-0 w-[400px] h-[300px] rounded-full bg-[#C28C54]/10 blur-[100px]" />
+
+        <div className="absolute top-16 left-8 md:left-16 text-[12rem] md:text-[19rem] font-serif text-[#1A362D]/[0.025] leading-none select-none">
+          “
+        </div>
+
+        <div className="absolute bottom-10 right-10 text-[8rem] md:text-[13rem] font-serif italic text-[#C28C54]/[0.06] leading-none select-none">
+          Stories
+        </div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 lg:px-12 relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+
+        {/* Section heading */}
         <FadeIn>
-          <div className="text-center mb-14">
-            <span className={`${theme.accentText} uppercase tracking-widest text-sm font-bold block mb-4`}>{t.testimonials.label}</span>
-            <h2 className={`text-4xl md:text-5xl font-serif ${theme.textDark}`}>
-              {t.testimonials.heading1} <span className="italic text-[#C28C54]">{t.testimonials.heading2}</span>
+          <div className="text-center mb-12 md:mb-16">
+            <div className="flex items-center justify-center gap-4 mb-5">
+              <span className="w-10 md:w-16 h-px bg-[#C28C54]" />
+
+              <span className={`${theme.accentText} uppercase tracking-[0.3em] text-xs md:text-sm font-bold`}>
+                {t.testimonials.label}
+              </span>
+
+              <span className="w-10 md:w-16 h-px bg-[#C28C54]" />
+            </div>
+
+            <h2 className={`text-4xl md:text-6xl lg:text-7xl font-serif ${theme.textDark} leading-tight`}>
+              {t.testimonials.heading1}{" "}
+              <span className="italic text-[#C28C54]">
+                {t.testimonials.heading2}
+              </span>
             </h2>
+
+            <p className="text-[#1A362D]/55 mt-5 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+              {isHindi
+                ? "उन लोगों की सच्ची कहानियाँ जिनके जीवन में बदलाव आया।"
+                : "Real voices. Real experiences. Stories of the lives touched by our work."}
+            </p>
           </div>
         </FadeIn>
 
-        <div className="relative min-h-[280px] md:min-h-[240px]">
-          {quotes.map((q, i) => (
-            <motion.div
-              key={`${isHindi}-${i}`}
-              animate={{
-                opacity: i === idx ? 1 : 0,
-                y: i === idx ? 0 : 20,
-                scale: i === idx ? 1 : 0.95,
-                pointerEvents: i === idx ? 'auto' : 'none',
-              }}
-              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute inset-0 text-center"
-            >
-              <p className={`text-2xl md:text-3xl lg:text-4xl font-serif italic ${theme.textDark} leading-relaxed mb-8 max-w-3xl mx-auto`}>
-                &quot;{q.quote}&quot;
-              </p>
-              <p className={`${theme.accentText} font-bold tracking-widest uppercase text-sm`}>{q.author}</p>
-              <p className="text-[#1A362D]/50 text-xs mt-1">{q.role}</p>
-            </motion.div>
-          ))}
+        {/* Portrait carousel stage */}
+        <div
+          className="relative max-w-7xl mx-auto h-[780px] md:h-[850px] lg:h-[900px]"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+
+          {/* Decorative rings */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] h-[85%] border border-[#C28C54]/15 rounded-[50%] hidden md:block" />
+
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[82%] h-[70%] border border-[#1A362D]/[0.06] rounded-[50%] hidden md:block" />
+
+          {/* Previous and next videos */}
+          {renderSideCard(videos[previousIndex], "left", previousIndex)}
+          {renderSideCard(videos[nextIndex], "right", nextIndex)}
+
+          {/* Main video */}
+          <motion.div
+            key={activeIndex}
+            initial={{ opacity: 0, y: 25, scale: 0.96 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute z-20 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[88%] max-w-[440px]"
+          >
+            <div className="relative rounded-2xl md:rounded-3xl bg-white p-3 md:p-4 shadow-[0_35px_100px_rgba(26,54,45,0.28)] border border-white/90">
+
+              <div className="absolute top-0 left-8 right-8 h-[3px] bg-gradient-to-r from-transparent via-[#C28C54] to-transparent rounded-full z-30" />
+
+              <button
+                type="button"
+                onClick={() => setSelectedVideo(videos[activeIndex])}
+                className="relative block w-full aspect-[9/16] rounded-xl md:rounded-2xl overflow-hidden bg-[#1A362D] group"
+              >
+                <img
+                  src={videos[activeIndex].poster}
+                  alt={videos[activeIndex].title}
+                  className="w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#10251F]/85 via-black/10 to-black/10" />
+
+                {/* Animated play button */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="absolute inset-0 rounded-full border border-white/60 scale-150 opacity-0 group-hover:scale-[1.8] group-hover:opacity-100 transition-all duration-700" />
+
+                    <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/95 text-[#1A362D] flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:bg-[#C28C54] group-hover:text-white transition-all duration-500">
+                      <svg className="w-7 h-7 md:w-9 md:h-9 ml-1" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Video information */}
+                <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7 text-left">
+                  <span className="inline-flex items-center gap-2 text-[#E0A96D] text-[10px] md:text-xs font-bold uppercase tracking-[0.25em]">
+                    <span className="w-5 h-px bg-[#E0A96D]" />
+                    {videos[activeIndex].category}
+                  </span>
+
+                  <h3 className="text-white font-serif text-2xl md:text-3xl mt-2">
+                    {videos[activeIndex].title}
+                  </h3>
+                </div>
+              </button>
+
+              {/* Card footer */}
+              <div className="px-3 md:px-5 py-4 flex items-center justify-between gap-3">
+                <div>
+                  <p className={`font-serif text-lg md:text-xl ${theme.textDark}`}>
+                    {videos[activeIndex].title}
+                  </p>
+
+                  <p className="text-[10px] md:text-xs text-[#1A362D]/45 mt-1 uppercase tracking-[0.18em]">
+                    {isHindi ? "ट्रस्ट की पहल" : "A story from our initiatives"}
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-2 text-[#C28C54] text-[10px] md:text-xs font-bold uppercase tracking-widest whitespace-nowrap">
+                  <span className="hidden sm:inline">
+                    {isHindi ? "वीडियो देखें" : "Watch story"}
+                  </span>
+                  <span className="text-lg">↗</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
 
-        <div className="flex justify-center gap-3 mt-8">
-          {quotes.map((_, i) => (
-            <button key={i} onClick={() => setIdx(i)}
-              className={`h-2 rounded-full transition-all duration-500 ${i === idx ? 'w-10 bg-[#C28C54]' : 'w-2 bg-[#1A362D]/20'}`} />
-          ))}
+        {/* Navigation */}
+        <div className="relative z-30 flex items-center justify-center gap-6 mt-3">
+
+          <button
+            type="button"
+            onClick={previousVideo}
+            aria-label="Previous testimonial"
+            className="w-11 h-11 rounded-full border border-[#1A362D]/20 text-[#1A362D] hover:bg-[#1A362D] hover:text-white hover:border-[#1A362D] transition-all duration-300 flex items-center justify-center"
+          >
+            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M15 18l-6-6 6-6" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+
+          <div className="flex items-center gap-3">
+            {videos.map((video, i) => (
+              <button
+                key={video.url}
+                type="button"
+                onClick={() => setActiveIndex(i)}
+                aria-label={`Go to testimonial ${i + 1}`}
+                className={`h-[3px] rounded-full transition-all duration-500 ${
+                  i === activeIndex
+                    ? "w-10 bg-[#C28C54]"
+                    : "w-3 bg-[#1A362D]/20 hover:bg-[#C28C54]/60"
+                }`}
+              />
+            ))}
+          </div>
+
+          <button
+            type="button"
+            onClick={nextVideo}
+            aria-label="Next testimonial"
+            className="w-11 h-11 rounded-full border border-[#1A362D]/20 text-[#1A362D] hover:bg-[#1A362D] hover:text-white hover:border-[#1A362D] transition-all duration-300 flex items-center justify-center"
+          >
+            <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M9 18l6-6-6-6" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Slide counter and progress */}
+        <div className="max-w-xs mx-auto mt-7">
+          <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-[#1A362D]/45 mb-3">
+            <span>{isHindi ? "कहानियाँ" : "Stories"}</span>
+
+            <span className="tabular-nums">
+              {String(activeIndex + 1).padStart(2, "0")} / {String(videos.length).padStart(2, "0")}
+            </span>
+          </div>
+
+          <div className="h-[2px] bg-[#1A362D]/10 rounded-full overflow-hidden">
+            <motion.div
+              key={activeIndex}
+              initial={{ width: "0%" }}
+              animate={{ width: "100%" }}
+              transition={{ duration: 6, ease: "linear" }}
+              className="h-full bg-[#C28C54] rounded-full"
+            />
+          </div>
+        </div>
+
+        {/* Bottom decoration */}
+        <div className="flex items-center justify-center gap-3 mt-12 opacity-50">
+          <span className="w-12 h-px bg-[#C28C54]" />
+          <span className="text-[#C28C54] text-xs">✦</span>
+          <span className="w-12 h-px bg-[#C28C54]" />
         </div>
       </div>
+
+      {/* Video popup */}
+      {selectedVideo && (
+        <div
+          className="fixed inset-0 z-[250] bg-[#08130F]/95 backdrop-blur-md flex items-center justify-center p-4 md:p-10"
+          onClick={() => setSelectedVideo(null)}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.94, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="relative w-full max-w-5xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setSelectedVideo(null)}
+              aria-label="Close video"
+              className="absolute -top-12 right-0 text-white/80 hover:text-[#C28C54] transition-colors"
+            >
+              <svg className="w-9 h-9" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path strokeWidth="2" strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <video
+              key={selectedVideo.url}
+              src={selectedVideo.url}
+              controls
+              autoPlay
+              playsInline
+              preload="none"
+              className="w-full max-h-[80vh] rounded-xl bg-black shadow-2xl"
+            />
+
+            <h3 className="text-white text-xl font-serif mt-4 text-center">
+              {selectedVideo.title}
+            </h3>
+          </motion.div>
+        </div>
+      )}
     </section>
   );
 };
+
+
+
+
 
 // --- PROJECT DETAIL VIEW ---
 const ProjectDetailView = ({ project: rawProject, setCurrentView, onImageClick }) => {
