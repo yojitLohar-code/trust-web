@@ -1434,6 +1434,58 @@ const FounderSpotlight = () => {
           </div>
         </div>
       </div>
+      
+        {/* ============ HISTORICAL CONTRIBUTIONS POSTER ============ */}
+        <div className="mt-24 md:mt-32">
+
+          <FadeIn>
+            <div className="text-center mb-12">
+              <span className="text-[#C28C54] uppercase tracking-[0.3em] text-xs font-bold">
+                {isHindi ? "सेवा और स्मृति" : "A RECORD OF SERVICE"}
+              </span>
+
+              <h3 className="text-3xl md:text-5xl font-serif text-white mt-4">
+                {isHindi
+                  ? "पुण्य स्मरण एवं सेवा कार्य"
+                  : "A Legacy Remembered Through Service"}
+              </h3>
+
+              <p className="text-white/50 mt-4 max-w-2xl mx-auto">
+                {isHindi
+                  ? "परिवार द्वारा किए गए सामाजिक और परोपकारी कार्यों की झलक।"
+                  : "A reflection of the family's contributions to society and community welfare."}
+              </p>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={150}>
+            <div className="max-w-2xl mx-auto relative group">
+
+              <div className="absolute -inset-3 border border-[#C28C54]/30 rounded-2xl
+                              group-hover:border-[#C28C54]/70 transition-all duration-500" />
+
+              <div className="relative bg-[#FFF8EF] rounded-xl p-2 md:p-4 shadow-2xl overflow-hidden">
+                <img
+                  src="pics/punya.png"
+                  alt="Historical charitable contributions and service activities"
+                  loading="lazy"
+                  className="w-full h-auto object-contain rounded-lg
+                             transition-transform duration-700
+                             group-hover:scale-[1.015]"
+                />
+              </div>
+
+              <div className="text-center mt-6">
+                <span className="text-[#C28C54] text-xs uppercase tracking-[0.3em] font-bold">
+                  {isHindi ? "सेवा · संस्कार · विरासत" : "Service · Values · Legacy"}
+                </span>
+              </div>
+
+            </div>
+          </FadeIn>
+
+        </div>
+
     </section>
   );
 };
@@ -1769,7 +1821,7 @@ const TestimonialsSection = () => {
 
   const videos = [
     {
-      title: isHindi ? "अधिवक्ता संजय बोहरा" : "Advocate Sanjay Bohra",
+      title: isHindi ? "अधिवक्ता संजय बोहरा" : "Advocate Sanjay Bohra / Chairman of Nagarpalika Sadri",
       category: isHindi ? "समुदाय की आवाज़" : "Community Voice",
       url: "https://res.cloudinary.com/dgiktxjvl/video/upload/v1793439999/advocate_sanjaybohra_sviw43.mp4",
       poster: "https://res.cloudinary.com/dgiktxjvl/video/upload/so_1,w_700,h_1100,c_fill,g_auto,q_auto,f_jpg/v1793439999/advocate_sanjaybohra_sviw43.jpg",
@@ -1781,7 +1833,7 @@ const TestimonialsSection = () => {
       poster: "https://res.cloudinary.com/dgiktxjvl/video/upload/so_1,w_700,h_1100,c_fill,g_auto,q_auto,f_jpg/v1793440014/pashu_hospital_kxd7fk.jpg",
     },
     {
-      title: isHindi ? "अधिवक्ता संजय बोहरा" : "Advocate Sanjay Bohra",
+      title: isHindi ? "अधिवक्ता संजय बोहरा" : "Advocate Sanjay Bohra / Chairman of Nagarpalika Sadri",
       category: isHindi ? "सर्वांगीण विकास" : "Holistic Development",
       url: "https://res.cloudinary.com/dgiktxjvl/video/upload/v1793440012/school_s0hd8o.mp4",
       poster: "https://res.cloudinary.com/dgiktxjvl/video/upload/so_1,w_700,h_1100,c_fill,g_auto,f_jpg/v1793440012/school_s0hd8o.jpg",
