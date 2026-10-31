@@ -536,12 +536,11 @@ const homeGalleryImages = [
   { src: "pics/edu2.jpeg",       en: { text: "School Kits",              tag: "Education" },   hi: { text: "स्कूल किट",              tag: "शिक्षा" } },
   { src: "pics/class1.jpeg",     en: { text: "Classroom Support",        tag: "Education" },   hi: { text: "कक्षा सहायता",           tag: "शिक्षा" } },
   { src: "pics/sports2.jpeg",    en: { text: "Extracurricular Activities", tag: "Education" }, hi: { text: "पाठ्येतर गतिविधियाँ",     tag: "शिक्षा" } },
-  { src: "pics/edu3.jpeg",       en: { text: "School Adoption",          tag: "Education" },   hi: { text: "स्कूल गोद लेना",          tag: "शिक्षा" } },
-  { src: "pics/edu4.jpeg",       en: { text: "Infrastructure Support",   tag: "Education" },   hi: { text: "बुनियादी ढांचा",          tag: "शिक्षा" } },
+  { src: "pics/a.jpeg",       en: { text: "School Adoption",          tag: "Education" },   hi: { text: "स्कूल गोद लेना",          tag: "शिक्षा" } },
+  { src: "pics/inf.jpeg",       en: { text: "Infrastructure Support",   tag: "Education" },   hi: { text: "बुनियादी ढांचा",          tag: "शिक्षा" } },
   { src: "pics/enn1.jpeg",       en: { text: "Tree Plantation",          tag: "Environment" }, hi: { text: "वृक्षारोपण",              tag: "पर्यावरण" } },
   { src: "pics/enn2.jpeg",       en: { text: "Aravali Clean-Up",         tag: "Environment" }, hi: { text: "अरावली सफाई",            tag: "पर्यावरण" } },
-  { src: "pics/animal1.jpeg",    en: { text: "Pashu Hospital",           tag: "Jeevdaya" },    hi: { text: "पशु अस्पताल",            tag: "जीवदया" } },
-  { src: "pics/animal2.jpeg",    en: { text: "Chara Vitaran",            tag: "Jeevdaya" },    hi: { text: "चारा वितरण",             tag: "जीवदया" } },
+  {src: "pics/lib.jpeg",         en: { text: "Library",                  tag: "Education" },   hi: { text: "पुस्तकालय",                tag: "शिक्षा" }},  
   { src: "pics/family1.jpeg",    en: { text: "Family Support",           tag: "Social" },      hi: { text: "परिवार सहायता",          tag: "सामाजिक" } },
   { src: "pics/social1.jpeg",    en: { text: "Relief Distribution",      tag: "Social" },      hi: { text: "राहत वितरण",             tag: "सामाजिक" } },
 ].map((entry) => ({
@@ -1468,7 +1467,7 @@ const FounderSpotlight = () => {
 
               <div className="relative bg-[#FFF8EF] rounded-xl p-2 md:p-4 shadow-2xl overflow-hidden">
                 <img
-                  src="pics/punya.png"
+                  src="pics/p2.png"
                   alt="Historical charitable contributions and service activities"
                   loading="lazy"
                   className="w-full h-auto object-contain rounded-lg
