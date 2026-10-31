@@ -140,7 +140,7 @@ const translations = {
       pillarsTitle: 'Our Pillars',
       visitTitle: 'Visit Us',
       contactHeading: 'Send us a message.',
-      contactDesc: 'Have questions about our initiatives or wish to partner with us? Reach out to the Trust administration — we reply within 48 hours.',
+      contactDesc: 'Have questions about our initiatives or wish to partner with us? Reach out to the Trust administration.',
       name: 'Your Name',
       namePlaceholder: 'John Doe',
       email: 'Email',
