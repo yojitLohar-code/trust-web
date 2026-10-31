@@ -759,11 +759,13 @@ const TornEdgeRight = () => (
 );
 
 // --- LOGO ICON ---
+// --- LOGO ICON ---
 const TrustLogoIcon = () => (
-  <svg className="w-8 h-8 md:w-10 md:h-10 text-[#C28C54]" viewBox="0 0 100 100" fill="none" stroke="currentColor">
-    <path d="M50 10 L15 25 C15 60 30 85 50 95 C70 85 85 60 85 25 Z" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M50 80 C50 80 50 45 35 35 C50 35 50 45 50 60 C50 45 50 35 65 35 C50 45 50 80 50 80 Z" fill="currentColor" />
-  </svg>
+  <img
+    src="pics/icon2.png"
+    alt="S.M.T. Punamiya Charitable Trust Logo"
+    className="w-16 h-16 md:w-20 md:h-20 object-contain"
+  />
 );
 
 // --- MARQUEE ---
