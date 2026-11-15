@@ -822,7 +822,7 @@ const Navbar = ({ currentView, setCurrentView }) => {
           </motion.div>
           <div className="flex flex-col">
             <span className={`font-serif text-lg md:text-xl tracking-wide transition-colors ${scrolled || currentView !== 'home' ? theme.textLight : 'text-white'} group-hover:text-[#C28C54]`}>
-              S.M.T. Punamiya
+              Shri Mulchand Tarachand Punamiya
             </span>
             <span className={`text-[9px] md:text-[10px] uppercase tracking-[0.2em] font-bold ${theme.accentText}`}>
               Charitable Trust
@@ -1192,7 +1192,332 @@ const TrusteesSection = () => {
     </section>
   );
 };
+// --- HISTORICAL CONTRIBUTIONS LEDGER (Replaces p2.png Poster) ---
+const HistoricalContributionsSection = () => {
+  const { isHindi } = useLang();
 
+  const content = isHindi
+    ? {
+        eyebrow: "सेवा और स्मृति",
+        heading: "पुण्य स्मरण एवं सेवा कार्य",
+        subtitle: "सादड़ी में जनकल्याणकारी कार्यों की एक झलक — परिवार द्वारा समाज को समर्पित ऐतिहासिक योगदान।",
+        badge: "पावन स्मृति",
+        patriarchLeft: {
+          title: "स्व. शा. रूपचंदजी",
+          role: "पुण्य स्मृति",
+        },
+        patriarchRight: {
+          title: "स्व. शा. ताराचंदजी",
+          role: "पुण्य स्मृति",
+        },
+        foundational: [
+          {
+            era: "1983 में",
+            tag: "तीर्थ एवं आश्रय",
+            text: "सेठ रूपचंदजी ताराचंदजी पुनामिया द्वारा परशुराम महादेव कुंडधाम में धर्मशाला (अतिथि गृह) का निर्माण कराया गया।",
+          },
+          {
+            era: "सन् 1936",
+            tag: "स्वास्थ्य सेवा",
+            text: "सेठ रूपचंद ताराचंद सामुदायिक राजकीय चिकित्सालय का निर्माण कराया गया।",
+          },
+        ],
+        chronicles: [
+          {
+            tag: "तीर्थ जीर्णोद्धार",
+            text: "परशुराम महादेव बगीची में धर्मशाला का निर्माण तथा परशुराम महादेव बगीची का जीर्णोद्धार।",
+          },
+          {
+            tag: "अकाल राहत",
+            text: "छिनवा में भीषण अकाल के दौरान 'अंत्योदय योजना' (काम के बदले अनाज) चलाकर हंजा वाव से परशुराम महादेव कुंडधाम तक सड़क का निर्माण।",
+          },
+          {
+            tag: "पर्यावरण एवं स्वच्छता",
+            text: "प्रतिवर्ष श्रावण और भाद्रपद मास के पश्चात गुफा मंदिर से लेकर मार्ग तक स्वच्छता अभियान का आयोजन।",
+          },
+          {
+            tag: "ज्ञान एवं पुस्तकालय",
+            text: "सेठ श्री रूपचंदजी ताराचंदजी पुनामिया परिवार द्वारा त्रिकोणिया (बस स्टैंड रोड) सार्वजनिक पुस्तकालय का निर्माण कर श्री वर्धमान स्थानकवासी जैन श्रावक संघ, सादड़ी को भेंट किया गया।",
+          },
+          {
+            tag: "समाज भवन",
+            text: "श्रीमती लाड़कंवर नरेंद्रजी पुनामिया एवं श्री नवरतनमलजी मूलचंदजी पुनामिया परिवार द्वारा श्री वर्धमान स्थानकवासी जैन श्रावक संघ सादड़ी न्याति नोहरा भवन हेतु विशेष योगदान।",
+          },
+          {
+            tag: "निःशुल्क डायलिसिस",
+            text: "सादड़ी स्थित सेठ रूपचंद ताराचंद सामुदायिक राजकीय चिकित्सालय में पहली बार पूर्णतः स्व-व्यय से अत्याधुनिक मशीनों से सुसज्जित डायलिसिस केंद्र का निर्माण, जहाँ जरूरतमंद और आर्थिक रूप से कमजोर रोगियों को निःशुल्क जीवनरक्षक डायलिसिस सेवा प्रदान की जाती है।",
+          },
+          {
+            tag: "हरित अभियान",
+            text: "पर्यावरण संरक्षण हेतु निरंतर वृहद वृक्षारोपण अभियान।",
+          },
+          {
+            tag: "छात्र कल्याण",
+            text: "विद्यार्थियों को स्कूल बैग, पुस्तकें, पानी की बोतलें और ज्योमेट्री बॉक्स जैसी शैक्षणिक सामग्री का वितरण।",
+          },
+          {
+            tag: "नेत्र चिकित्सा",
+            text: "निःशुल्क नेत्र चिकित्सा शिविरों का नियमित आयोजन।",
+          },
+          {
+            tag: "पेयजल व्यवस्था",
+            text: "सादड़ी राजकीय सामुदायिक चिकित्सालय परिसर में 4 शीतल पेयजल प्याऊ का निर्माण।",
+          },
+          {
+            tag: "चिकित्सालय नवीनीकरण",
+            text: "सेठ रूपचंद ताराचंद सामुदायिक राजकीय चिकित्सालय का जीर्णोद्धार, जिसे हाल ही में श्रीमती लाड़कंवर नरेंद्रजी पुनामिया परिवार द्वारा भी संपन्न कराया गया।",
+          },
+        ],
+        ongoingLabel: "और अब...",
+        ongoingText:
+          "पुराने रणकपुर रोड, जाटों की डोरण स्थित सादड़ी पुनामिया फार्म में गिर गौवंश का पालन-पोषण तथा श्री नागेश्वर महादेव (शिव) मंदिर का भव्य निर्माण।",
+        motto: "सेवा ही परम धर्म है",
+      }
+    : {
+        eyebrow: "A RECORD OF SERVICE",
+        heading: "A Legacy Remembered Through Service",
+        subtitle: "A Glance at Welfare Works in Sadri — a reflection of the family's timeless contributions to society.",
+        badge: "SACRED MEMORIAL",
+        patriarchLeft: {
+          title: "Late Sha. Rupchandji",
+          role: "In Revered Memory",
+        },
+        patriarchRight: {
+          title: "Late Sha. Tarachandji",
+          role: "In Revered Memory",
+        },
+        foundational: [
+          {
+            era: "In 1983",
+            tag: "Pilgrimage & Shelter",
+            text: "A Dharamshala (guest house) was built at Parshuram Mahadev Kunddham by Seth Rupchandji Tarachandji Punamiya.",
+          },
+          {
+            era: "In 1936",
+            tag: "Public Healthcare",
+            text: "The Seth Rupchand Tarachand Community Government Hospital was built.",
+          },
+        ],
+        chronicles: [
+          {
+            tag: "Heritage Restoration",
+            text: "Construction of a Dharamshala at Parshuram Mahadev Bagichi, and renovation of the Parshuram Mahadev Bagichi.",
+          },
+          {
+            tag: "Famine Relief",
+            text: "Construction of a road from Hanja Vav to Parshuram Mahadev Kunddham by running the 'Antyodaya Yojana' (food-for-work) during the severe famine in Chhinva.",
+          },
+          {
+            tag: "Sacred Trail Clean-Up",
+            text: "Every year, after the Shravan and Bhadrapada months, cleaning operations are organized from the cave temple.",
+          },
+          {
+            tag: "Knowledge & Literacy",
+            text: "The Trikoniya (Bus Stand Road) Public Library was built by the Seth Shri Rupchandji Tarachandji Punamiya family and gifted to the Shri Vardhaman Sthanakvasi Jain Shravak Sangh, Sadri.",
+          },
+          {
+            tag: "Community Bhavan",
+            text: "Highly exceptional contribution by Smt. Ladkanwar Narendraji Punamiya and the Shri Navratanmalji Moolchandji Punamiya family towards the Shri Vardhaman Sthanakvasi Jain Shravak Sangh Sadri Nyati Nohra Bhavan.",
+          },
+          {
+            tag: "Life-Saving Dialysis",
+            text: "A dialysis center was built for the first time at the Seth Rupchand Tarachand Community Government Hospital in Sadri, equipped with state-of-the-art machines entirely at self-expense, and free life-saving dialysis service was initiated for needy patients, also providing relief to financially weaker patients.",
+          },
+          {
+            tag: "Environment",
+            text: "Continuous tree plantation drives for environmental conservation.",
+          },
+          {
+            tag: "Student Welfare",
+            text: "Distribution of school supplies such as bags, books, water bottles, and geometry boxes to students.",
+          },
+          {
+            tag: "Vision Care",
+            text: "Organizing free eye treatment camps.",
+          },
+          {
+            tag: "Civic Amenities",
+            text: "Construction of 4 drinking water kiosks (Pyau) in the Sadri Government Community Hospital premises.",
+          },
+          {
+            tag: "Hospital Modernization",
+            text: "Renovation of the Seth Rupchand Tarachand Community Government Hospital, which was recently also carried out by the Smt. Ladkanwar Narendraji Punamiya family.",
+          },
+        ],
+        ongoingLabel: "And now...",
+        ongoingText:
+          "Rearing of Gir cows at the old Ranakpur Road, Jaton ki Doran, Sadri Punamiya Farm, and the grand construction of the Shri Nageshwar Mahadev (Shiva) Temple.",
+        motto: "SERVICE IS THE SUPREME DUTY",
+      };
+
+  return (
+    <div className="mt-24 md:mt-32 relative max-w-6xl mx-auto px-6 lg:px-12">
+      {/* Section Title */}
+      <FadeIn>
+        <div className="text-center mb-14">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <span className="w-10 md:w-14 h-[1px] bg-[#C28C54]/60" />
+            <span className="text-[#C28C54] uppercase tracking-[0.3em] text-xs font-bold">
+              {content.eyebrow}
+            </span>
+            <span className="w-10 md:w-14 h-[1px] bg-[#C28C54]/60" />
+          </div>
+
+          <h3 className="text-3xl md:text-5xl font-serif text-white">
+            {content.heading}
+          </h3>
+
+          <p className="text-white/55 mt-4 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed">
+            {content.subtitle}
+          </p>
+        </div>
+      </FadeIn>
+
+      {/* Main Illuminated Archival Plaque */}
+      <FadeIn delay={120}>
+        <div className="relative rounded-3xl bg-gradient-to-b from-[#132922]/95 via-[#162F27]/95 to-[#11241E]/95 border border-[#C28C54]/35 shadow-[0_30px_90px_rgba(0,0,0,0.45)] p-6 sm:p-10 md:p-14 overflow-hidden">
+          {/* Subtle Ambient Glow */}
+          <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[500px] h-[260px] rounded-full bg-[#C28C54]/10 blur-[90px] pointer-events-none" />
+
+          {/* Heritage Corner Ornaments */}
+          <div className="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-[#C28C54]/60 rounded-tl-lg pointer-events-none" />
+          <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-[#C28C54]/60 rounded-tr-lg pointer-events-none" />
+          <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-[#C28C54]/60 rounded-bl-lg pointer-events-none" />
+          <div className="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-[#C28C54]/60 rounded-br-lg pointer-events-none" />
+
+          {/* Top Tribute Crest */}
+          <div className="relative z-10 text-center pb-10 mb-10 border-b border-[#C28C54]/20">
+            <span className="inline-block px-5 py-1.5 rounded-full bg-[#C28C54] text-[#1A362D] text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] shadow-lg mb-8">
+              {content.badge}
+            </span>
+
+            {/* Patriarchs Tribute Row */}
+            <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 max-w-4xl mx-auto">
+              {/* Left Patriarch */}
+              <div className="p-4 rounded-2xl bg-white/[0.03] border border-[#C28C54]/20">
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#C28C54]/80 font-bold mb-1">
+                  {content.patriarchLeft.role}
+                </p>
+                <h4 className="font-serif text-xl md:text-2xl text-white">
+                  {content.patriarchLeft.title}
+                </h4>
+              </div>
+
+              {/* Center Lotus / Reverence Emblem */}
+              <div className="flex flex-col items-center justify-center">
+                <div className="w-16 h-16 rounded-full border border-[#C28C54]/50 bg-[#C28C54]/10 flex items-center justify-center shadow-[0_0_30px_rgba(194,140,84,0.2)]">
+                  <svg className="w-8 h-8 text-[#C28C54]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c1.8 3.2 2.5 6.2 2.5 9.5 0 2.5-1.1 4.5-2.5 5.5-1.4-1-2.5-3-2.5-5.5 0-3.3.7-6.3 2.5-9.5z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 18c-3.5-.3-6.5-2.2-8-5.5 2.8-.5 5.5.4 7.3 2.3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 18c3.5-.3 6.5-2.2 8-5.5-2.8-.5-5.5.4-7.3 2.3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 20h12" />
+                  </svg>
+                </div>
+              </div>
+
+              {/* Right Patriarch */}
+              <div className="p-4 rounded-2xl bg-white/[0.03] border border-[#C28C54]/20">
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#C28C54]/80 font-bold mb-1">
+                  {content.patriarchRight.role}
+                </p>
+                <h4 className="font-serif text-xl md:text-2xl text-white">
+                  {content.patriarchRight.title}
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          {/* Foundational Dated Milestones (VS 1983 & 1936 AD) */}
+          <div className="relative z-10 grid md:grid-cols-2 gap-5 mb-8">
+            {content.foundational.map((item, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.12 }}
+                className="relative rounded-2xl bg-gradient-to-br from-[#C28C54]/20 via-[#C28C54]/10 to-transparent border border-[#C28C54]/45 p-6 md:p-7 overflow-hidden group hover:border-[#C28C54] transition-all duration-300"
+              >
+                <div className="flex items-center justify-between gap-3 mb-3">
+                  <span className="font-serif italic text-xl md:text-2xl text-[#E0A96D] font-semibold">
+                    {item.era}
+                  </span>
+                  <span className="text-[10px] uppercase tracking-[0.2em] font-bold px-3 py-1 rounded-full bg-[#1A362D]/80 text-[#C28C54] border border-[#C28C54]/30">
+                    {item.tag}
+                  </span>
+                </div>
+                <p className="text-white/90 text-base md:text-lg leading-relaxed">
+                  {item.text}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Chronicle of Welfare Works (11 Items) */}
+          <div className="relative z-10 grid md:grid-cols-2 gap-4 md:gap-5 mb-8">
+            {content.chronicles.map((item, idx) => {
+              const isLastFullWidth = idx === content.chronicles.length - 1;
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.5, delay: (idx % 4) * 0.06 }}
+                  className={`rounded-2xl bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 hover:border-[#C28C54]/45 p-5 md:p-6 transition-all duration-300 flex items-start gap-4 group ${
+                    isLastFullWidth ? "md:col-span-2" : ""
+                  }`}
+                >
+                  <span className="w-8 h-8 rounded-full bg-[#C28C54]/15 border border-[#C28C54]/40 text-[#C28C54] font-serif text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-[#C28C54] group-hover:text-[#1A362D] transition-colors">
+                    {String(idx + 3).padStart(2, "0")}
+                  </span>
+                  <div className="flex-1">
+                    <span className="block text-[10px] uppercase tracking-[0.22em] text-[#C28C54] font-bold mb-1.5">
+                      {item.tag}
+                    </span>
+                    <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                      {item.text}
+                    </p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+
+          {/* "And now..." Living Legacy Spotlight */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="relative z-10 rounded-2xl bg-gradient-to-r from-[#C28C54]/15 via-[#C28C54]/20 to-[#C28C54]/15 border border-[#C28C54]/60 p-6 md:p-8 shadow-inner"
+          >
+            <div className="flex items-center gap-3 mb-3">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#E0A96D] animate-pulse shadow-[0_0_12px_rgba(224,169,109,0.9)]" />
+              <span className="font-serif italic text-2xl md:text-3xl text-[#E0A96D]">
+                {content.ongoingLabel}
+              </span>
+            </div>
+            <p className="text-white text-base md:text-xl font-serif leading-relaxed">
+              {content.ongoingText}
+            </p>
+          </motion.div>
+
+          {/* Closing Motto Seal */}
+          <div className="relative z-10 mt-10 pt-8 border-t border-[#C28C54]/20 flex items-center justify-center gap-4 text-center">
+            <span className="hidden sm:block w-16 h-[1px] bg-gradient-to-r from-transparent to-[#C28C54]" />
+            <span className="text-[#C28C54] text-xs">✦</span>
+            <p className="font-serif text-sm md:text-base uppercase tracking-[0.3em] text-[#E0A96D] font-bold">
+              {content.motto}
+            </p>
+            <span className="text-[#C28C54] text-xs">✦</span>
+            <span className="hidden sm:block w-16 h-[1px] bg-gradient-to-l from-transparent to-[#C28C54]" />
+          </div>
+        </div>
+      </FadeIn>
+    </div>
+  );
+};
 // --- REDESIGNED LEGACY SECTION ---
 const FounderSpotlight = () => {
   const { isHindi } = useLang();
@@ -1435,113 +1760,253 @@ const FounderSpotlight = () => {
           </div>
         </div>
       </div>
-      
-        {/* ============ HISTORICAL CONTRIBUTIONS POSTER ============ */}
-        <div className="mt-24 md:mt-32">
-
-          <FadeIn>
-            <div className="text-center mb-12">
-              <span className="text-[#C28C54] uppercase tracking-[0.3em] text-xs font-bold">
-                {isHindi ? "सेवा और स्मृति" : "A RECORD OF SERVICE"}
-              </span>
-
-              <h3 className="text-3xl md:text-5xl font-serif text-white mt-4">
-                {isHindi
-                  ? "पुण्य स्मरण एवं सेवा कार्य"
-                  : "A Legacy Remembered Through Service"}
-              </h3>
-
-              <p className="text-white/50 mt-4 max-w-2xl mx-auto">
-                {isHindi
-                  ? "परिवार द्वारा किए गए सामाजिक और परोपकारी कार्यों की झलक।"
-                  : "A reflection of the family's contributions to society and community welfare."}
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={150}>
-            <div className="max-w-2xl mx-auto relative group">
-
-              <div className="absolute -inset-3 border border-[#C28C54]/30 rounded-2xl
-                              group-hover:border-[#C28C54]/70 transition-all duration-500" />
-
-              <div className="relative bg-[#FFF8EF] rounded-xl p-2 md:p-4 shadow-2xl overflow-hidden">
-                <img
-                  src="pics/p2.png"
-                  alt="Historical charitable contributions and service activities"
-                  loading="lazy"
-                  className="w-full h-auto object-contain rounded-lg
-                             transition-transform duration-700
-                             group-hover:scale-[1.015]"
-                />
-              </div>
-
-              <div className="text-center mt-6">
-                <span className="text-[#C28C54] text-xs uppercase tracking-[0.3em] font-bold">
-                  {isHindi ? "सेवा · संस्कार · विरासत" : "Service · Values · Legacy"}
-                </span>
-              </div>
-
-            </div>
-          </FadeIn>
-
-        </div>
-
+    <HistoricalContributionsSection />
     </section>
   );
 };
 
-// --- JOURNEY TIMELINE ---
+// --- TWO DECADES OF IMPACT (TIMELINE FLOW WITH POINTERS) ---
 const JourneyTimeline = () => {
   const { isHindi } = useLang();
-  const t = isHindi ? translations.hi : translations.en;
-  const milestones = journeyMilestones.map((m, i) => ({
-    year: m.year,
-    title: t.journey.milestones[i].title,
-    desc: t.journey.milestones[i].desc,
-  }));
+
+  const content = isHindi
+    ? {
+        eyebrow: "हमारी यात्रा और सेवा कार्य",
+        heading1: "दो दशकों का",
+        heading2: "प्रभाव।",
+        desc: "2003 में एक संकल्प से शुरू होकर समाज सेवा के छह स्तंभों तक — हर चरण में निरंतर ज़मीनी कार्य।",
+        steps: [
+          {
+            badge: "2003 · स्थापना",
+            title: "ट्रस्ट की स्थापना एवं दृष्टिकोण",
+            points: [
+              "27 नवंबर 2003 को स्व. श्री मूलचंद ताराचंद पुनामिया के सुपुत्र श्री नरेंद्र मूलचंद पुनामिया द्वारा समाज सेवा, शिक्षा, स्वास्थ्य और सामुदायिक विकास के उद्देश्य से स्थापना।",
+              "पंजीकरण संख्या: E21650 | PAN: AADTS9660B | पंजीकृत पता: 'पुनीत', हिमाचल CHS लि., सुंदर नगर के सामने, एस.वी. रोड, मालाड (पश्चिम), मुंबई – 400 064।",
+              "स्थापना के समय से ही वंचित समुदायों के उत्थान और सार्वजनिक संस्थानों को सशक्त बनाने के लिए सतत सेवा कार्य।",
+            ],
+          },
+          {
+            badge: "स्तंभ 01 · स्वास्थ्य सेवा",
+            title: "स्वास्थ्य सेवा पहलें",
+            points: [
+              "बुनियादी ढांचे और परिचालन आवश्यकताओं के लिए स्थानीय अस्पतालों को गोद लेना और सहयोग प्रदान करना।",
+              "अस्पताल सुविधाओं का व्यापक आधुनिकीकरण और उन्नयन।",
+              "अस्पताल परिसर के भीतर समर्पित डायलिसिस केंद्र और स्वच्छ लॉन्ड्री का संचालन।",
+              "चिकित्सा उपकरणों, रोगी कल्याण और अस्पताल के भीतर विभिन्न स्वास्थ्य परियोजनाओं का संचालन एवं वित्तपोषण।",
+              "जरूरतमंद रोगियों को उपचार, दवाइयों और जांच (डायग्नोस्टिक्स) के लिए सहायता।",
+              "सामान्य स्वास्थ्य जांच शिविर, जागरूकता अभियान और प्रतिवर्ष संस्थापक दिवस पर निःशुल्क नेत्र चिकित्सा शिविर का आयोजन।",
+            ],
+          },
+          {
+            badge: "स्तंभ 02 · शिक्षा",
+            title: "शिक्षा एवं छात्र कल्याण",
+            points: [
+              "विद्यालयों सहित शैक्षणिक संस्थानों के संचालन का समर्थन और प्रबंधन।",
+              "कम संसाधन वाले विद्यालयों में योग्य शिक्षकों की व्यवस्था — विभिन्न विद्यालयों में 28 शिक्षकों की नियुक्ति की गई।",
+              "प्रतिवर्ष विद्यार्थियों को स्कूल किट (स्कूल बैग, किताबें, कॉपियां, पानी की बोतल और ज्योमेट्री बॉक्स) का वितरण।",
+              "मेधावी एवं आर्थिक रूप से कमजोर विद्यार्थियों की शिक्षा फीस और छात्रवृत्ति का वित्तपोषण।",
+              "व्यक्तित्व विकास, करियर मार्गदर्शन और पाठ्येतर गतिविधियों के लिए कार्यक्रमों का आयोजन।",
+            ],
+          },
+          {
+            badge: "स्तंभ 03 · ज्ञान विकास",
+            title: "पुस्तकालय एवं ज्ञान विकास",
+            points: [
+              "सामुदायिक पुस्तकालयों की स्थापना, संचालन और नियमित रखरखाव।",
+              "पुस्तकों, पठन सामग्री और अध्ययन संसाधनों तक निःशुल्क पहुँच प्रदान करना।",
+              "पुस्तकालयों में डिजिटल लर्निंग सिस्टम और आधुनिक शैक्षणिक उपकरणों का समर्थन।",
+              "साक्षरता और पढ़ने की संस्कृति को बढ़ावा देने के लिए जागरूकता कार्यक्रम चलाना।",
+            ],
+          },
+          {
+            badge: "स्तंभ 04 · पर्यावरण",
+            title: "पर्यावरण संरक्षण पहलें",
+            points: [
+              "प्रतिवर्ष परशुराम महादेव मेले के पश्चात अरावली क्षेत्र में 6 किलोमीटर तक विशेष स्वच्छता अभियान।",
+              "आक्रामक लैंटाना झाड़ियों की सफाई हेतु वन विभाग को निरंतर जनशक्ति (मैनपावर) उपलब्ध कराना।",
+              "वृहद वृक्षारोपण अभियान और हरित क्षेत्रों का संरक्षण एवं रखरखाव।",
+              "स्वच्छ भारत गतिविधियों तथा जल संरक्षण, अपशिष्ट प्रबंधन और पर्यावरण-अनुकूल प्रथाओं पर जागरूकता कार्यक्रम।",
+            ],
+          },
+          {
+            badge: "स्तंभ 05 · जीवदया",
+            title: "पशु कल्याण (जीवदया)",
+            points: [
+              "गोडवाड़ जीवदया ट्रस्ट के माध्यम से चारा वितरण हेतु वार्षिक योगदान।",
+              "स्थानीय पशु चिकित्सालय का व्यापक जीर्णोद्धार और आधुनिकीकरण।",
+              "ग्रामीण पशुधन के उपचार और स्वास्थ्य देखभाल हेतु पशु चिकित्सा शिविरों का आयोजन।",
+            ],
+          },
+          {
+            badge: "स्तंभ 06 · समाज कल्याण",
+            title: "सामाजिक कल्याण एवं सामुदायिक विकास",
+            points: [
+              "विभिन्न जनकल्याणकारी योजनाओं के माध्यम से आर्थिक रूप से कमजोर परिवारों को संबल।",
+              "खाद्यान्न, वस्त्र और मौसमी आवश्यक किट जैसी जीवनोपयोगी वस्तुओं का वितरण।",
+              "प्राकृतिक आपदाओं, आपात स्थितियों और राहत कार्यों के दौरान त्वरित सहायता।",
+              "सांस्कृतिक, सामाजिक जागरूकता और सामुदायिक विकास कार्यक्रमों का आयोजन।",
+            ],
+          },
+        ],
+      }
+    : {
+        eyebrow: "Our Journey",
+        heading1: "Two decades of",
+        heading2: "impact.",
+        desc: "From a single vision in 2003 to six pillars of continuous on-ground service — every step dedicated to community upliftment.",
+        steps: [
+          {
+            badge: "2003 · Foundation",
+            title: "Inception & Vision of the Trust",
+            points: [
+              "Founded on 27th November 2003 by Shri Narendra Mulchand Punamiya, son of Late Mulchand Tarachand Punamiya, to promote social welfare, education, healthcare, and community development.",
+              "Regd. No. E21650 | PAN: AADTS9660B | Registered at ‘Punit’, Himachal CHS Ltd., Opp. Sundar Nagar, S.V. Road, Malad (West), Mumbai – 400 064.",
+              "Committed since inception to uplifting underprivileged communities and strengthening public institutions through sustainable charitable initiatives.",
+            ],
+          },
+          {
+            badge: "Pillar 01 · Healthcare",
+            title: "Healthcare Initiatives",
+            points: [
+              "Adoption and support of local hospitals for infrastructure and operational needs.",
+              "Modernization and upgradation of hospital facilities.",
+              "Running a dedicated Dialysis centre and a clean laundry inside hospital premises.",
+              "Funding for medical equipment, patient welfare, and running various healthcare projects inside the hospital.",
+              "Support for needy patients for treatments, medicines, and diagnostics.",
+              "Organizing general health check-up camps, awareness drives, and an annual Eye Camp every year on Founder's Day.",
+            ],
+          },
+          {
+            badge: "Pillar 02 · Education",
+            title: "Education & Student Welfare",
+            points: [
+              "Supporting and managing the operations of educational institutions, including schools.",
+              "Providing qualified teachers in under-resourced schools — 28 teachers appointed across all schools.",
+              "Distribution of school kits every year, including bags, books, water bottles, notebooks, and geometry boxes.",
+              "Funding school fees and scholarships for meritorious and financially needy students.",
+              "Organizing programs for personality development, career guidance, and extracurricular activities.",
+            ],
+          },
+          {
+            badge: "Pillar 03 · Knowledge",
+            title: "Library & Knowledge Development",
+            points: [
+              "Establishment, running, and maintenance of community libraries.",
+              "Providing free access to books, reading material, and study resources.",
+              "Supporting digital learning systems and modern educational tools in libraries.",
+              "Running awareness programs to promote literacy and a strong reading culture.",
+            ],
+          },
+          {
+            badge: "Pillar 04 · Environment",
+            title: "Environmental Initiatives",
+            points: [
+              "Cleaning drive at the Aravali every year after Parshuram Mahadev Mela, covering a 6 km stretch.",
+              "Providing manpower to the Forest Department for cleaning invasive Lantana plants.",
+              "Large-scale tree plantation drives and maintenance of green spaces.",
+              "Supporting cleanliness initiatives, Swachh Bharat activities, and awareness programs on water conservation, waste management, and eco-friendly practices.",
+            ],
+          },
+          {
+            badge: "Pillar 05 · Jeevdaya",
+            title: "Animal Welfare (Jeevdaya)",
+            points: [
+              "Annual contribution for Chara Vitaran (fodder distribution) through Godwad Jeevdaya Trust.",
+              "Extensive renovation and upgradation of the local Pashu (Veterinary) Hospital.",
+              "Organizing regular Pashu Chikitsa (veterinary medical) camps for rural livestock.",
+            ],
+          },
+          {
+            badge: "Pillar 06 · Community",
+            title: "Social Welfare & Community Development",
+            points: [
+              "Support to economically weaker families through targeted welfare programs.",
+              "Distribution of essential items like food grains, clothing, and seasonal kits.",
+              "Assistance during natural calamities, emergencies, and relief situations.",
+              "Organizing cultural, social awareness, and community development programs.",
+            ],
+          },
+        ],
+      };
 
   return (
     <section id="journey" className={`py-24 md:py-32 ${theme.bgBase} relative overflow-hidden`}>
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
+        {/* Section Heading */}
         <FadeIn>
           <div className="text-center mb-20">
-            <span className={`${theme.accentText} uppercase tracking-widest text-sm font-bold block mb-4`}>{t.journey.label}</span>
+            <span className={`${theme.accentText} uppercase tracking-widest text-sm font-bold block mb-4`}>
+              {content.eyebrow}
+            </span>
             <h2 className={`text-4xl md:text-5xl lg:text-6xl font-serif ${theme.textDark} leading-tight`}>
-              {t.journey.heading1} <span className="italic text-[#C28C54]">{t.journey.heading2}</span>
+              {content.heading1} <span className="italic text-[#C28C54]">{content.heading2}</span>
             </h2>
             <p className="text-[#1A362D]/60 mt-6 max-w-2xl mx-auto text-lg">
-              {t.journey.desc}
+              {content.desc}
             </p>
           </div>
         </FadeIn>
 
+        {/* Central Spine Timeline */}
         <div className="relative">
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-[#C28C54]/40 to-transparent -translate-x-1/2" />
-          {milestones.map((m, i) => {
+          {/* Vertical Spine Line */}
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-[#C28C54]/50 to-transparent -translate-x-1/2" />
+
+          {content.steps.map((step, i) => {
             const isLeft = i % 2 === 0;
             return (
               <motion.div
-                key={m.year}
-                initial={{ opacity: 0, x: isLeft ? -60 : 60 }}
+                key={step.badge}
+                initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.7, delay: 0.05 * i, ease: [0.16, 1, 0.3, 1] }}
-                className={`relative flex items-center mb-12 md:mb-16 ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}
+                className={`relative flex items-start mb-12 md:mb-16 ${
+                  isLeft ? "md:flex-row" : "md:flex-row-reverse"
+                }`}
               >
-                <div className={`ml-12 md:ml-0 md:w-1/2 ${isLeft ? 'md:pr-16 md:text-right' : 'md:pl-16'}`}>
-                  <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-[#1A362D]/5 hover:shadow-2xl transition-all duration-500 group hover:-translate-y-1">
-                    <div className="flex items-center gap-3 mb-3" style={{ justifyContent: isLeft ? 'flex-end' : 'flex-start' }}>
-                      <span className={`text-xs font-bold tracking-widest uppercase ${theme.accentText}`}>{m.year}</span>
+                {/* Timeline Card */}
+                <div className={`ml-12 md:ml-0 md:w-1/2 ${isLeft ? "md:pr-14" : "md:pl-14"}`}>
+                  <div className="relative bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-[#1A362D]/5 hover:border-[#C28C54]/40 hover:shadow-2xl transition-all duration-500 group hover:-translate-y-1 text-left">
+                    {/* Horizontal Connector Arm to Spine (Desktop) */}
+                    <span
+                      className={`hidden md:block absolute top-8 w-14 h-[1px] bg-[#C28C54]/45 ${
+                        isLeft ? "-right-14" : "-left-14"
+                      }`}
+                    />
+
+                    {/* Step Badge */}
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className={`text-xs font-bold tracking-widest uppercase ${theme.accentText}`}>
+                        {step.badge}
+                      </span>
                       <span className="w-8 h-[1px] bg-[#C28C54]" />
                     </div>
-                    <h3 className={`text-2xl md:text-3xl font-serif ${theme.textDark} mb-3 group-hover:text-[#C28C54] transition-colors`}>{m.title}</h3>
-                    <p className="text-[#1A362D]/70 leading-relaxed">{m.desc}</p>
+
+                    {/* Step Title */}
+                    <h3 className={`text-2xl md:text-3xl font-serif ${theme.textDark} mb-4 group-hover:text-[#C28C54] transition-colors`}>
+                      {step.title}
+                    </h3>
+
+                    {/* Bullet Pointers */}
+                    <ul className="space-y-2.5">
+                      {step.points.map((point, pIdx) => (
+                        <li
+                          key={pIdx}
+                          className="flex items-start gap-3 text-sm md:text-base text-[#1A362D]/75 leading-relaxed"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#C28C54] mt-2 flex-shrink-0" />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
+
+                {/* Pulsing Spine Node */}
                 <motion.div
-                  whileHover={{ scale: 1.5 }}
-                  className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 md:w-5 md:h-5 rounded-full bg-[#C28C54] border-4 border-[#F7F5F0] shadow-lg z-10"
+                  whileHover={{ scale: 1.4 }}
+                  className="absolute left-4 md:left-1/2 top-6 -translate-x-1/2 w-4 h-4 md:w-5 md:h-5 rounded-full bg-[#C28C54] border-4 border-[#F7F5F0] shadow-lg z-10"
                 >
                   <motion.div
                     className="absolute inset-0 rounded-full bg-[#C28C54]"
